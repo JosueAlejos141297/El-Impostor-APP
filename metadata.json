@@ -1,6 +1,0 @@
-{
-  "name": "El Impostor - Juego de Deducción",
-  "description": "Juego multijugador local de deducción social en español con roles secretos, votación interactiva, temporizador y marcador.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
