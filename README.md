@@ -20,7 +20,7 @@ Modos claro y oscuro.
 
 Efectos de sonido y música.
 
-**🛠️ Tecnologías:** 
+## 🛠️ Tecnologías: 
 
 HTML5
 
