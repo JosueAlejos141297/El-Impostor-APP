@@ -33,7 +33,11 @@ Tailwind CSS
 ## 🚀 Cómo jugar
 
 Abre index.html en tu navegador.
+
 Configura los jugadores y los impostores.
+
 Revela los roles en secreto.
+
 Discute, vota y descubre al impostor.
+
 Desarrollado como proyecto de entretenimiento y deducción social.
