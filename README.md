@@ -2,19 +2,38 @@
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
-# Run and deploy your AI Studio app
+# 🎭 El Impostor
 
-This contains everything you need to run your app locally.
+Juego de deducción social multijugador local donde los jugadores deben descubrir quién es el impostor antes de que termine la partida.
 
-View your app in AI Studio: https://ai.studio/apps/546c798e-3944-4d5d-9b03-ecfd93ff1f60
+## ✨ Características
 
-## Run Locally
+De 3 a 15 jugadores.
 
-**Prerequisites:**  Node.js
+Roles y palabras secretas.
 
+Votaciones interactivas.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Temporizador y marcador.
+
+Modos claro y oscuro.
+
+Efectos de sonido y música.
+
+**🛠️ Tecnologías:** 
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Tailwind CSS
+
+## 🚀 Cómo jugar
+
+Abre index.html en tu navegador.
+Configura los jugadores y los impostores.
+Revela los roles en secreto.
+Discute, vota y descubre al impostor.
+Desarrollado como proyecto de entretenimiento y deducción social.
