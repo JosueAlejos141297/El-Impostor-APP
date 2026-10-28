@@ -391,6 +391,22 @@
       border-color: #94a3b8 !important;
     }
 
+    /* Quick player preset buttons in light mode */
+    html:not(.dark) .btn-quick-players {
+      background-color: #f1f5f9 !important;
+      border: 1px solid #cbd5e1 !important;
+      color: #334155 !important;
+    }
+    html:not(.dark) .btn-quick-players:hover {
+      background-color: #e2e8f0 !important;
+      color: #0f172a !important;
+    }
+    html:not(.dark) .btn-quick-players.is-active {
+      background-color: #0284c7 !important;
+      border-color: #0284c7 !important;
+      color: #ffffff !important;
+    }
+
     /* Player input rows */
     html:not(.dark) .player-input-row {
       background-color: #ffffff !important;
@@ -582,6 +598,7 @@
       color: #475569 !important;
     }
     html:not(.dark) #btnPauseResumeTimer,
+    html:not(.dark) #btnSub30Seconds,
     html:not(.dark) #btnAdd30Seconds {
       background-color: #ffffff !important;
       border: 1px solid #cbd5e1 !important;
@@ -589,6 +606,7 @@
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
     }
     html:not(.dark) #btnPauseResumeTimer:hover,
+    html:not(.dark) #btnSub30Seconds:hover,
     html:not(.dark) #btnAdd30Seconds:hover {
       background-color: #f1f5f9 !important;
       border-color: #94a3b8 !important;
@@ -809,6 +827,25 @@
       background-color: #f1f5f9 !important;
       border-color: #94a3b8 !important;
     }
+    html:not(.dark) #btnCopyResultSummary {
+      background-color: #ffffff !important;
+      border: 1px solid #cbd5e1 !important;
+      color: #0f172a !important;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    }
+    html:not(.dark) #btnCopyResultSummary:hover {
+      background-color: #f1f5f9 !important;
+      border-color: #94a3b8 !important;
+    }
+    html:not(.dark) #btnTogglePeekSecret {
+      background-color: #ffffff !important;
+      border: 1px solid #cbd5e1 !important;
+      color: #334155 !important;
+    }
+    html:not(.dark) #btnTogglePeekSecret:hover {
+      background-color: #f1f5f9 !important;
+      color: #0f172a !important;
+    }
 
     /* Modals in light mode (Scoreboard & Rules) */
     html:not(.dark) #modalScoreboard,
@@ -890,6 +927,93 @@
       color: #0f172a !important;
     }
 
+    /* Deck Status Card, Deck Manager Modal & Toast in light mode */
+    html:not(.dark) #deckStatusCard {
+      background-color: #ecfdf5 !important;
+      border-color: #a7f3d0 !important;
+      color: #065f46 !important;
+    }
+    html:not(.dark) #deckStatusCard span.text-emerald-400 {
+      color: #047857 !important;
+    }
+    html:not(.dark) #deckStatusCard #txtDeckStats {
+      color: #064e3b !important;
+      font-weight: 600 !important;
+    }
+    html:not(.dark) #deckStatusCard #btnResetDeck {
+      color: #047857 !important;
+    }
+    html:not(.dark) #deckStatusCard #btnResetDeck:hover {
+      color: #065f46 !important;
+    }
+    html:not(.dark) #btnOpenDeckManager {
+      background-color: #d1fae5 !important;
+      border-color: #6ee7b7 !important;
+      color: #065f46 !important;
+    }
+    html:not(.dark) #btnOpenDeckManager:hover {
+      background-color: #a7f3d0 !important;
+    }
+    html:not(.dark) #modalDeckManager {
+      background-color: rgba(15, 23, 42, 0.45) !important;
+    }
+    html:not(.dark) #modalDeckManager > div {
+      background-color: #ffffff !important;
+      border: 1px solid #cbd5e1 !important;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+      color: #0f172a !important;
+    }
+    html:not(.dark) #modalDeckManager h3 {
+      color: #0f172a !important;
+    }
+    html:not(.dark) #btnCloseDeckManager {
+      background-color: #f1f5f9 !important;
+      border: 1px solid #cbd5e1 !important;
+      color: #475569 !important;
+    }
+    html:not(.dark) #btnCloseDeckManager:hover {
+      background-color: #e2e8f0 !important;
+      color: #0f172a !important;
+    }
+    html:not(.dark) #modalDeckManager .deck-stat-box {
+      background-color: #f8fafc !important;
+      border: 1px solid #e2e8f0 !important;
+    }
+    html:not(.dark) #modalDeckManager .deck-stat-num {
+      color: #0f172a !important;
+    }
+    html:not(.dark) #modalDeckManager .deck-stat-lbl {
+      color: #64748b !important;
+    }
+    html:not(.dark) #modalDeckManager input,
+    html:not(.dark) #modalDeckManager select {
+      background-color: #f8fafc !important;
+      border-color: #cbd5e1 !important;
+      color: #0f172a !important;
+    }
+    html:not(.dark) #modalDeckManager .word-chip {
+      background-color: #f8fafc !important;
+      border: 1px solid #e2e8f0 !important;
+      color: #1e293b !important;
+    }
+    html:not(.dark) #modalDeckManager .word-chip.is-played {
+      background-color: #f1f5f9 !important;
+      border-color: #cbd5e1 !important;
+      color: #94a3b8 !important;
+      text-decoration: line-through;
+    }
+    html:not(.dark) #modalDeckManager .word-chip.is-custom {
+      background-color: #faf5ff !important;
+      border-color: #d8b4fe !important;
+      color: #6b21a8 !important;
+    }
+    html:not(.dark) #appToast {
+      background-color: #064e3b !important;
+      color: #ecfdf5 !important;
+      border-color: #34d399 !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2) !important;
+    }
+
     /* Scrollbars in light mode */
     html:not(.dark) ::-webkit-scrollbar-track {
       background: #f1f5f9;
@@ -938,9 +1062,49 @@
     .celebrate-anim {
       animation: celebration-bounce 1.5s ease-in-out infinite;
     }
+
+    /* Tactile Keyboard Hint Pills (Anti-slop, clean micro-typography) */
+    .kbd-hint {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 10px;
+      line-height: 1;
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: rgba(255, 255, 255, 0.8);
+      vertical-align: middle;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    html:not(.dark) .kbd-hint {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+      color: #475569;
+    }
+
+    /* Tension Heartbeat Pulse when Timer <= 10s */
+    @keyframes tensionHeartbeat {
+      0%, 100% {
+        box-shadow: 0 0 15px rgba(244, 63, 94, 0.25);
+        border-color: rgba(244, 63, 94, 0.4);
+        transform: scale(1);
+      }
+      50% {
+        box-shadow: 0 0 35px rgba(244, 63, 94, 0.7);
+        border-color: rgba(244, 63, 94, 0.9);
+        transform: scale(1.012);
+      }
+    }
+    .timer-tension {
+      animation: tensionHeartbeat 0.9s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-rose-500 selection:text-white transition-colors duration-300 overflow-x-hidden w-full max-w-full">
+
+  <!-- Accessible Live Region for Screen Readers -->
+  <div id="a11yLiveAnnouncer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
   <!-- TOP HEADER -->
   <header class="sticky top-0 z-30 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-3 sm:px-4 py-2 sm:py-2.5 shadow-md transition-colors duration-300 w-full">
@@ -1029,36 +1193,54 @@
     <!-- ============================================== -->
     <!-- 1. SETUP / CONFIGURATION PHASE                 -->
     <!-- ============================================== -->
-    <section id="phaseSetup" class="space-y-6">
+    <section id="phaseSetup" class="space-y-4 sm:space-y-5">
       
-      <!-- Intro Card -->
-      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 to-indigo-950/60 border border-slate-800 p-5 shadow-xl">
-        <div class="absolute -right-10 -bottom-10 w-36 h-36 bg-rose-600/10 rounded-full blur-2xl pointer-events-none"></div>
-        <div class="relative">
-          <h2 class="text-xl sm:text-2xl font-black text-white tracking-tight mb-1">
-            Partida Local Multijugador
+      <!-- Intro Card: Compact, punchy & touch-first -->
+      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950/50 to-slate-900 border border-slate-800/80 p-3.5 sm:p-4 shadow-lg flex items-center justify-between gap-3">
+        <div class="space-y-1">
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-sky-500/15 text-sky-400 border border-sky-500/30">
+              📱 Pasa y Juega
+            </span>
+            <span class="text-[11px] text-slate-400">1 solo dispositivo</span>
+          </div>
+          <h2 class="text-base sm:text-lg font-black text-white tracking-tight">
+            Descubre al Impostor
           </h2>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            Pasa el dispositivo de mano en mano. Todos los tripulantes recibirán la misma palabra secreta; el impostor no sabrá cuál es. ¡Descúbrelo antes de que sea tarde!
+          <p class="text-xs text-slate-300 leading-snug">
+            Todos reciben la palabra secreta salvo el espía. ¡Den pistas sutiles y voten!
           </p>
+        </div>
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-2xl shrink-0 shadow-inner">
+          🤫
         </div>
       </div>
 
       <!-- Settings Form -->
-      <div class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 space-y-6 shadow-lg">
+      <div class="bg-slate-900/90 rounded-2xl border border-slate-800 p-4 sm:p-5 space-y-4 sm:space-y-5 shadow-lg">
 
         <!-- Player Count & Imposters Count -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <!-- Total Players -->
           <div class="space-y-2">
             <div class="flex justify-between items-center">
               <label for="numPlayers" class="text-sm font-semibold text-slate-200">Jugadores</label>
               <span id="txtNumPlayers" class="text-xs font-mono font-bold text-sky-400 bg-sky-950/60 px-2 py-0.5 rounded border border-sky-800/50">4 jugadores</span>
             </div>
-            <div class="flex items-center gap-3">
-              <button type="button" id="btnDecPlayers" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-lg flex items-center justify-center transition border border-slate-700 active:scale-95">-</button>
+            <div class="flex items-center gap-2.5">
+              <button type="button" id="btnDecPlayers" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-lg flex items-center justify-center transition border border-slate-700 active:scale-95 shrink-0">-</button>
               <input type="range" id="numPlayers" min="3" max="15" value="4" class="flex-1 h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-sky-500" />
-              <button type="button" id="btnIncPlayers" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-lg flex items-center justify-center transition border border-slate-700 active:scale-95">+</button>
+              <button type="button" id="btnIncPlayers" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-lg flex items-center justify-center transition border border-slate-700 active:scale-95 shrink-0">+</button>
+            </div>
+            <!-- Quick player preset chips for mobile touch convenience -->
+            <div class="flex items-center gap-1.5 pt-0.5 flex-wrap">
+              <span class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Rápido:</span>
+              <button type="button" data-players="3" class="btn-quick-players px-2 py-0.5 text-xs font-bold rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60 active:scale-95 transition">3</button>
+              <button type="button" data-players="4" class="btn-quick-players px-2 py-0.5 text-xs font-bold rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60 active:scale-95 transition">4</button>
+              <button type="button" data-players="5" class="btn-quick-players px-2 py-0.5 text-xs font-bold rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60 active:scale-95 transition">5</button>
+              <button type="button" data-players="6" class="btn-quick-players px-2 py-0.5 text-xs font-bold rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60 active:scale-95 transition">6</button>
+              <button type="button" data-players="8" class="btn-quick-players px-2 py-0.5 text-xs font-bold rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60 active:scale-95 transition">8</button>
+              <button type="button" data-players="10" class="btn-quick-players px-2 py-0.5 text-xs font-bold rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60 active:scale-95 transition">10</button>
             </div>
           </div>
 
@@ -1068,39 +1250,39 @@
               <label for="numImposters" class="text-sm font-semibold text-slate-200">Impostores</label>
               <span id="txtNumImposters" class="text-xs font-mono font-bold text-rose-400 bg-rose-950/60 px-2 py-0.5 rounded border border-rose-800/50">1 impostor</span>
             </div>
-            <div class="flex items-center gap-3">
-              <button type="button" id="btnDecImposters" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-lg flex items-center justify-center transition border border-slate-700 active:scale-95">-</button>
+            <div class="flex items-center gap-2.5">
+              <button type="button" id="btnDecImposters" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-lg flex items-center justify-center transition border border-slate-700 active:scale-95 shrink-0">-</button>
               <input type="range" id="numImposters" min="1" max="2" value="1" class="flex-1 h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-rose-500" />
-              <button type="button" id="btnIncImposters" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-lg flex items-center justify-center transition border border-slate-700 active:scale-95">+</button>
+              <button type="button" id="btnIncImposters" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-lg flex items-center justify-center transition border border-slate-700 active:scale-95 shrink-0">+</button>
             </div>
           </div>
         </div>
 
         <!-- Player Name Inputs Section -->
-        <div class="space-y-3 pt-2 border-t border-slate-800">
+        <div class="space-y-2.5 pt-2 border-t border-slate-800">
           <div class="flex items-center justify-between">
-            <label class="text-sm font-semibold text-slate-200 flex items-center gap-2">
+            <label class="text-sm font-semibold text-slate-200 flex items-center gap-1.5">
               <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
-              Nombres de los Jugadores
+              Jugadores
             </label>
-            <button type="button" id="btnRandomizeNames" class="text-xs text-slate-400 hover:text-sky-300 underline transition">
+            <button type="button" id="btnRandomizeNames" class="text-xs text-sky-400 hover:text-sky-300 font-medium transition active:scale-95">
               Nombres al azar
             </button>
           </div>
-          <div id="playerInputsContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full">
+          <div id="playerInputsContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full">
             <!-- Dynamic inputs inserted by JS -->
           </div>
         </div>
 
         <!-- Word Category Selector -->
         <div class="space-y-2 pt-2 border-t border-slate-800">
-          <label for="selectCategory" class="text-sm font-semibold text-slate-200 flex items-center gap-2">
+          <label for="selectCategory" class="text-sm font-semibold text-slate-200 flex items-center gap-1.5">
             <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
             </svg>
-            Categoría de Palabras
+            Categoría
           </label>
           <select id="selectCategory" class="w-full bg-slate-800/90 text-slate-100 rounded-xl border border-slate-700 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
             <option value="aleatorio">🎲 Todas las categorías (Aleatorio)</option>
@@ -1111,68 +1293,86 @@
             <option value="profesiones">🧑‍🚒 Profesiones y Oficios</option>
             <option value="deportes">⚽ Deportes y Juegos</option>
             <option value="cine">🎬 Películas y Famosos</option>
-            <option value="personalizado">✏️ Palabra Personalizada Secreta...</option>
+            <option value="personalizado">✏️ Palabra Personalizada...</option>
           </select>
+
+          <!-- Deck Status / Baraja sin repetición & Memoria Ilimitada -->
+          <div id="deckStatusCard" class="flex flex-wrap items-center justify-between gap-2 px-3 py-2 bg-slate-900/80 rounded-xl border border-emerald-500/20 text-xs text-slate-300">
+            <div class="flex items-center gap-1.5">
+              <span class="inline-flex items-center justify-center w-5 h-5 rounded-md bg-emerald-500/20 text-emerald-400 font-bold text-xs">🎴</span>
+              <span id="txtDeckStats" class="text-slate-300 font-medium">Cargando baraja...</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <button type="button" id="btnOpenDeckManager" class="px-2.5 py-1 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 font-semibold text-[11px] transition flex items-center gap-1 active:scale-95 shadow-sm" title="Gestionar memoria y palabras">
+                <span>🧠</span>
+                <span>Banco de Palabras</span>
+              </button>
+              <button type="button" id="btnResetDeck" class="text-[11px] text-slate-400 hover:text-emerald-300 underline transition flex items-center gap-1 active:scale-95" title="Reiniciar baraja de esta categoría">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                Reiniciar
+              </button>
+            </div>
+          </div>
           
           <!-- Custom word input (hidden by default) -->
           <div id="customWordContainer" class="hidden mt-2 space-y-2 p-3 bg-slate-950/70 rounded-xl border border-slate-800">
-            <p class="text-xs text-amber-300 font-semibold">Introduce la palabra que conocerán los tripulantes:</p>
-            <input type="password" id="inputCustomWord" placeholder="Ej: Submarino, Tacos, etc." class="w-full bg-slate-900 text-white rounded-lg px-3 py-2 text-sm border border-slate-700 focus:outline-none focus:ring-2 focus:ring-amber-500" />
+            <p class="text-xs text-amber-300 font-semibold">Introduce la palabra secreta de los tripulantes:</p>
+            <input type="password" id="inputCustomWord" placeholder="Ej: Submarino, Tacos" class="w-full bg-slate-900 text-white rounded-lg px-3 py-2 text-sm border border-slate-700 focus:outline-none focus:ring-2 focus:ring-amber-500" />
             <p class="text-xs text-slate-400">Palabra pista para el impostor (en Modo Normal):</p>
-            <input type="text" id="inputCustomHint" placeholder="Ej: Océano, Tortilla, etc." class="w-full bg-slate-900 text-white rounded-lg px-3 py-2 text-sm border border-slate-700 focus:outline-none focus:ring-2 focus:ring-amber-500" />
+            <input type="text" id="inputCustomHint" placeholder="Ej: Océano, Tortilla" class="w-full bg-slate-900 text-white rounded-lg px-3 py-2 text-sm border border-slate-700 focus:outline-none focus:ring-2 focus:ring-amber-500" />
           </div>
         </div>
 
         <!-- Discussion Time & Difficulty -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-slate-800">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2 border-t border-slate-800">
           <!-- Discussion Timer Option -->
-          <div class="space-y-2">
-            <label for="selectTimerMinutes" class="text-sm font-semibold text-slate-200 flex items-center gap-2">
+          <div class="space-y-1.5">
+            <label for="selectTimerMinutes" class="text-sm font-semibold text-slate-200 flex items-center gap-1.5">
               <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Tiempo de Discusión
+              Tiempo de Debate
             </label>
-            <select id="selectTimerMinutes" class="w-full bg-slate-800/90 text-slate-100 rounded-xl border border-slate-700 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
-              <option value="45">45 segundos (Relámpago)</option>
-              <option value="60">1 minuto (Rápido)</option>
-              <option value="120" selected>2 minutos (Recomendado)</option>
-              <option value="180">3 minutos (Estándar)</option>
-              <option value="240">4 minutos</option>
-              <option value="300">5 minutos (Largo)</option>
-              <option value="0">Sin límite de tiempo</option>
+            <select id="selectTimerMinutes" class="w-full bg-slate-800/90 text-slate-100 rounded-xl border border-slate-700 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+              <option value="45">45s (Relámpago)</option>
+              <option value="60">1 min (Rápido)</option>
+              <option value="120" selected>2 min (Recomendado)</option>
+              <option value="180">3 min (Estándar)</option>
+              <option value="240">4 min</option>
+              <option value="300">5 min</option>
+              <option value="0">Sin límite</option>
             </select>
           </div>
 
           <!-- Difficulty Modes -->
-          <div class="space-y-2">
+          <div class="space-y-1.5">
             <div class="flex items-center justify-between">
-              <span class="text-sm font-semibold text-slate-200 block">Dificultad de Partida</span>
+              <span class="text-sm font-semibold text-slate-200 block">Dificultad</span>
               <span id="badgeHardModeStatus" class="hidden text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30">Extremo ⚡</span>
             </div>
             
             <!-- Hard Mode Contrarreloj Toggle -->
-            <label class="flex items-start justify-between p-3 bg-gradient-to-r from-slate-800/70 to-rose-950/20 hover:from-slate-800 hover:to-rose-950/30 rounded-xl border border-slate-700/70 hover:border-rose-500/50 cursor-pointer transition shadow-sm group">
-              <div class="pr-2 space-y-1">
+            <label class="flex items-center justify-between p-2.5 sm:p-3 bg-gradient-to-r from-slate-800/70 to-rose-950/20 hover:from-slate-800 hover:to-rose-950/30 rounded-xl border border-slate-700/70 hover:border-rose-500/50 cursor-pointer transition shadow-sm group">
+              <div class="pr-2 space-y-0.5">
                 <div class="text-xs font-black text-rose-400 group-hover:text-rose-300 flex items-center gap-1.5">
-                  <span>⚡ Modo Difícil: Contrarreloj</span>
+                  <span>⚡ Modo Difícil</span>
+                  <span class="text-[10px] font-bold text-rose-400/90 px-1.5 py-0.2 rounded bg-rose-500/10 border border-rose-500/20">Sin pista</span>
                 </div>
                 <div class="text-[11px] text-slate-300 leading-tight">
-                  <strong class="text-rose-300 font-bold">El impostor NO tiene palabra pista</strong> (en Modo Normal sí recibe pista). Categoría oculta, sin prórrogas (+30s bloqueado), votos rápidos con reloj y victoria del impostor ante empates o dudas.
+                  El impostor no tiene pista. Votos con reloj y sin prórrogas.
                 </div>
               </div>
-              <input type="checkbox" id="toggleHardMode" class="w-5 h-5 mt-0.5 rounded-lg accent-rose-500 bg-slate-900 border-slate-700 cursor-pointer shrink-0" />
+              <input type="checkbox" id="toggleHardMode" class="w-5 h-5 rounded-lg accent-rose-500 bg-slate-900 border-slate-700 cursor-pointer shrink-0" />
             </label>
           </div>
         </div>
 
-        <!-- Notice when Hard Mode Contrarreloj is active -->
-        <div id="hardModeCategoryNotice" class="hidden p-3 rounded-xl bg-rose-950/50 border border-rose-800/60 text-rose-200 text-xs flex items-center gap-2.5 animate-pop">
-          <span class="text-xl shrink-0">🎲</span>
-          <div>
-            <span class="font-bold text-rose-300">¡Modo Difícil: Impostor Sin Palabra Pista!</span>
-            <p class="text-[11px] text-slate-300">En este modo, el impostor <strong class="text-rose-300">NO recibe palabra pista</strong> (en Modo Normal siempre tiene una palabra pista asignada para defenderse). Además, la categoría se seleccionará 100% en secreto y no habrá prórrogas.</p>
-          </div>
+        <!-- Notice when Hard Mode is active -->
+        <div id="hardModeCategoryNotice" class="hidden p-2.5 rounded-xl bg-rose-950/50 border border-rose-800/60 text-rose-200 text-xs flex items-center gap-2 animate-pop">
+          <span class="text-lg shrink-0">⚡</span>
+          <p class="text-[11px] text-rose-200 leading-tight">
+            <strong class="text-rose-300 font-bold">Modo Difícil activo:</strong> El impostor jugará a ciegas (sin pista) y la categoría será secreta.
+          </p>
         </div>
 
         <!-- Validation Warning (if any) -->
@@ -1184,12 +1384,13 @@
         </div>
 
         <!-- Start Game Button -->
-        <button type="button" id="btnStartGame" class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-rose-600 via-rose-500 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white font-bold text-base tracking-wide shadow-lg shadow-rose-900/40 transition active:scale-[0.99] flex items-center justify-center gap-2">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button type="button" id="btnStartGame" class="w-full min-h-[52px] py-3.5 px-6 rounded-2xl bg-gradient-to-r from-rose-600 via-rose-500 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white font-bold text-base tracking-wide shadow-lg shadow-rose-900/40 transition active:scale-[0.99] flex items-center justify-center gap-2 group cursor-pointer">
+          <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          Comenzar Partida
+          <span>Comenzar Partida</span>
+          <span class="kbd-hint hidden sm:inline-block ml-1">Espacio</span>
         </button>
 
       </div>
@@ -1198,13 +1399,13 @@
     <!-- ============================================== -->
     <!-- 2. SECRET ROLE REVEAL PHASE (PASS & PLAY)     -->
     <!-- ============================================== -->
-    <section id="phaseReveal" class="hidden space-y-6">
+    <section id="phaseReveal" class="hidden space-y-4 sm:space-y-5">
       
       <!-- Turn Indicator -->
       <div class="flex items-center justify-between text-xs text-slate-400 px-2">
         <span class="flex items-center gap-1.5 font-medium text-slate-300">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          Fase Secreta de Asignación
+          Asignación Secreta
         </span>
         <span id="revealProgressText" class="font-mono text-slate-300 bg-slate-900 px-2.5 py-1 rounded-full border border-slate-800">
           Jugador 1 de 4
@@ -1212,53 +1413,58 @@
       </div>
 
       <!-- Pass-to-player card (Before viewing) -->
-      <div id="revealWaitingCard" class="bg-slate-900 rounded-3xl border border-slate-800 p-7 text-center space-y-6 shadow-2xl relative overflow-hidden animate-pop">
-        <div class="relative w-24 h-24 mx-auto flex items-center justify-center">
+      <div id="revealWaitingCard" style="touch-action: manipulation;" class="bg-slate-900 rounded-3xl border border-slate-800 p-5 sm:p-7 text-center space-y-4 sm:space-y-5 shadow-2xl relative overflow-hidden animate-pop">
+        <div class="relative w-20 h-20 sm:w-24 sm:h-24 mx-auto flex items-center justify-center">
           <div class="absolute inset-0 rounded-3xl bg-indigo-500/20 blur-xl"></div>
-          <div id="revealTargetPlayerAvatar" class="relative w-20 h-20 rounded-3xl bg-indigo-950/70 border border-indigo-700/50 flex items-center justify-center text-4xl shadow-inner animate-float">
+          <div id="revealTargetPlayerAvatar" class="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl bg-indigo-950/70 border border-indigo-700/50 flex items-center justify-center text-3xl sm:text-4xl shadow-inner animate-float">
             🦊
           </div>
         </div>
 
-        <div class="space-y-2">
-          <p class="text-xs uppercase tracking-widest text-slate-400 font-bold">Entrega el dispositivo a:</p>
-          <h3 id="revealTargetPlayerName" class="text-3xl font-black text-white tracking-tight break-words flex items-center justify-center gap-2">
+        <div class="space-y-1.5">
+          <p class="text-[11px] sm:text-xs uppercase tracking-widest text-slate-400 font-bold">Pasa el móvil a:</p>
+          <h3 id="revealTargetPlayerName" class="text-2xl sm:text-3xl font-black text-white tracking-tight break-words flex items-center justify-center gap-2">
             Jugador 1
           </h3>
           <p class="text-xs text-slate-400 max-w-xs mx-auto">
-            Asegúrate de que nadie más mire la pantalla antes de pulsar el botón.
+            Nadie más debe mirar la pantalla.
           </p>
         </div>
 
-        <button type="button" id="btnRevealSecret" class="w-full py-3.5 sm:py-4 px-4 sm:px-6 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white shadow-xl shadow-indigo-950/50 transition active:scale-95 flex flex-col items-center justify-center gap-1 group cursor-pointer">
+        <button type="button" id="btnRevealSecret" class="w-full min-h-[52px] py-3.5 px-4 sm:px-6 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white shadow-xl shadow-indigo-950/50 transition active:scale-95 flex flex-col items-center justify-center gap-0.5 group cursor-pointer border border-indigo-400/30">
           <div class="flex items-center justify-center gap-2 text-base sm:text-lg font-black tracking-wide">
             <svg class="w-5 h-5 text-indigo-200 group-hover:scale-110 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
             </svg>
             <span>Soy <span id="btnRevealPlayerName">Jugador 1</span></span>
+            <span class="kbd-hint hidden sm:inline-block ml-1">Espacio</span>
           </div>
-          <span class="text-xs font-semibold text-indigo-200/90 tracking-wide">
+          <span class="text-[11px] font-semibold text-indigo-200/90 tracking-wide">
             (Tocar para ver rol)
           </span>
         </button>
       </div>
 
       <!-- Secret Revealed Card (Visible only while looking) -->
-      <div id="revealSecretCard" class="hidden rounded-3xl p-7 text-center space-y-6 shadow-2xl relative overflow-hidden transition-all duration-300">
+      <div id="revealSecretCard" style="touch-action: manipulation;" class="hidden rounded-3xl p-5 sm:p-7 text-center space-y-4 sm:space-y-5 shadow-2xl relative overflow-hidden transition-all duration-300">
         
-        <!-- Header Badge & Player Avatar -->
-        <div class="flex items-center justify-center gap-2">
+        <!-- Header Badge, Player Avatar & Quick Cover Toggle -->
+        <div class="flex items-center justify-center gap-2 flex-wrap">
           <span id="revealPlayerSecretAvatar" class="text-2xl bg-black/30 p-2 rounded-2xl border border-white/10">🦊</span>
-          <div id="revealRoleBadge" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest">
+          <div id="revealRoleBadge" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest">
             <!-- Role icon & text filled by JS -->
           </div>
+          <button type="button" id="btnTogglePeekSecret" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700/80 transition active:scale-95 shadow-sm" title="Tapar temporalmente la palabra">
+            <span id="btnTogglePeekIcon">👁️</span>
+            <span id="btnTogglePeekText">Ocultar palabra</span>
+          </button>
         </div>
 
         <!-- Big Secret Word or Impostor Alert -->
-        <div class="space-y-3 py-2">
+        <div id="revealWordContainer" class="space-y-2.5 py-1.5 transition-opacity duration-200">
           <p id="revealWordLabel" class="text-xs uppercase tracking-wider font-semibold text-slate-300">Palabra Secreta</p>
-          <div id="revealWordDisplay" class="text-3xl sm:text-4xl font-black tracking-tight break-words px-3 py-4 rounded-2xl bg-slate-950/70 border">
+          <div id="revealWordDisplay" class="text-3xl sm:text-4xl font-black tracking-tight break-words px-3 py-3.5 rounded-2xl bg-slate-950/70 border">
             <!-- Word filled by JS -->
           </div>
           <p id="revealCategoryHint" class="text-xs text-slate-300 font-medium">
@@ -1267,16 +1473,17 @@
         </div>
 
         <!-- Instructions for the Player -->
-        <div id="revealRoleInstructions" class="text-xs p-4 rounded-xl text-left space-y-1.5">
+        <div id="revealRoleInstructions" class="text-xs p-3.5 sm:p-4 rounded-xl text-left space-y-1">
           <!-- Instructions filled by JS -->
         </div>
 
         <!-- Hide and Pass Button -->
-        <button type="button" id="btnNextReveal" class="w-full py-4 px-6 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-base transition active:scale-95 flex items-center justify-center gap-2 border border-slate-700 shadow-lg">
-          <svg class="w-5 h-5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button type="button" id="btnNextReveal" class="w-full min-h-[52px] py-3.5 px-6 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-base transition active:scale-95 flex items-center justify-center gap-2 border border-slate-700 shadow-lg group cursor-pointer">
+          <svg class="w-5 h-5 text-slate-300 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
           </svg>
-          <span id="btnNextRevealText">Ocultar y pasar al siguiente</span>
+          <span id="btnNextRevealText">Ocultar y pasar</span>
+          <span class="kbd-hint hidden sm:inline-block ml-1">Espacio</span>
         </button>
 
       </div>
@@ -1286,29 +1493,29 @@
     <!-- ============================================== -->
     <!-- 3. DISCUSSION & TIMER PHASE                   -->
     <!-- ============================================== -->
-    <section id="phaseDiscussion" class="hidden space-y-6">
+    <section id="phaseDiscussion" class="hidden space-y-4 sm:space-y-5">
       
       <!-- Header Banner -->
-      <div class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 shadow-xl text-center space-y-2">
+      <div class="bg-slate-900/90 rounded-2xl border border-slate-800 p-3.5 sm:p-4 shadow-xl text-center space-y-1">
         <div class="flex items-center justify-center gap-2">
-          <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 uppercase tracking-wider">
-            Fase de Debate y Deducción
+          <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 uppercase tracking-wider">
+            Debate
           </span>
-          <span id="discussionHardBadge" class="hidden px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-rose-500/20 text-rose-400 border border-rose-500/40 animate-pulse">
-            ⚡ Contrarreloj Activo
+          <span id="discussionHardBadge" class="hidden px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-400 border border-rose-500/40 animate-pulse">
+            ⚡ Contrarreloj
           </span>
         </div>
-        <h2 class="text-xl sm:text-2xl font-black text-white">¡A debatir y descubrir al Impostor!</h2>
+        <h2 class="text-xl sm:text-2xl font-black text-white">¡A debatir!</h2>
         <p class="text-xs sm:text-sm text-slate-300 max-w-md mx-auto">
-          Por turnos, cada jugador dice una palabra o frase sutil relacionada con la palabra secreta. ¡No digas la palabra exacta o ayudarás al impostor!
+          Den una pista corta por turnos sin revelar la palabra secreta.
         </p>
       </div>
 
       <!-- Circular Timer Section -->
-      <div id="timerCardContainer" class="bg-slate-900 rounded-3xl border border-slate-800 p-6 flex flex-col items-center justify-center space-y-5 shadow-xl relative overflow-hidden">
+      <div id="timerCardContainer" class="bg-slate-900 rounded-3xl border border-slate-800 p-4 sm:p-5 flex flex-col items-center justify-center space-y-4 sm:space-y-5 shadow-xl relative overflow-hidden">
         
         <!-- Timer circle graphic -->
-        <div class="relative w-52 h-52 flex items-center justify-center">
+        <div class="relative w-44 h-44 sm:w-50 sm:h-50 flex items-center justify-center">
           <svg class="w-full h-full transform -rotate-90" viewBox="0 0 200 200">
             <!-- Background circle -->
             <circle cx="100" cy="100" r="85" class="text-slate-800" stroke-width="12" stroke="currentColor" fill="transparent" />
@@ -1319,13 +1526,13 @@
           <!-- Inner content inside circle -->
           <div class="absolute flex flex-col items-center justify-center text-center">
             <span id="timerText" class="text-4xl sm:text-5xl font-mono font-black tracking-tight text-white">03:00</span>
-            <span id="timerStatusLabel" class="text-xs font-semibold text-slate-400 uppercase tracking-widest mt-1">Tiempo Restante</span>
+            <span id="timerStatusLabel" class="text-xs font-semibold text-slate-400 uppercase tracking-widest mt-0.5">Tiempo Restante</span>
           </div>
         </div>
 
         <!-- Timer Controls -->
-        <div id="timerControlsRow" class="flex flex-wrap items-center justify-center gap-2.5 w-full">
-          <button type="button" id="btnPauseResumeTimer" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition flex items-center gap-1.5 active:scale-95">
+        <div id="timerControlsRow" class="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 w-full">
+          <button type="button" id="btnPauseResumeTimer" class="min-h-[44px] px-3.5 sm:px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition flex items-center gap-1.5 active:scale-95 shadow-sm" title="Pausar o reanudar el cronómetro">
             <svg id="iconTimerPause" class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -1334,21 +1541,29 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <span id="txtBtnPauseResume">Pausar</span>
+            <span class="kbd-hint hidden sm:inline-block ml-0.5">Espacio</span>
           </button>
 
-          <button type="button" id="btnAdd30Seconds" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition flex items-center gap-1.5 active:scale-95">
+          <button type="button" id="btnSub30Seconds" class="min-h-[44px] px-3 sm:px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition flex items-center gap-1.5 active:scale-95 shadow-sm" title="Reducir 30 segundos">
+            <svg class="w-4 h-4 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+            </svg>
+            <span>-30s</span>
+          </button>
+
+          <button type="button" id="btnAdd30Seconds" class="min-h-[44px] px-3 sm:px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition flex items-center gap-1.5 active:scale-95 shadow-sm" title="Añadir 30 segundos">
             <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg>
-            +30 Segundos
+            <span>+30s</span>
           </button>
         </div>
 
         <!-- Speaker Turn Guide -->
-        <div class="w-full bg-slate-950/60 rounded-xl p-3 border border-slate-800/80 flex items-center justify-between text-xs">
+        <div class="w-full bg-slate-950/60 rounded-xl p-2.5 sm:p-3 border border-slate-800/80 flex items-center justify-between text-xs">
           <span class="text-slate-400 flex items-center gap-1.5">
             <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
-            Primer jugador en dar pista:
+            Empieza dando pista:
           </span>
           <span class="inline-flex items-center gap-1.5">
             <span id="firstSpeakerAvatar" class="avatar-badge text-base">🦊</span>
@@ -1359,11 +1574,12 @@
       </div>
 
       <!-- Action Button: Go to Voting -->
-      <button type="button" id="btnGoToVoting" class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-rose-600 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white font-bold text-base shadow-xl shadow-rose-950/40 transition active:scale-95 flex items-center justify-center gap-2">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <button type="button" id="btnGoToVoting" class="w-full min-h-[52px] py-3.5 sm:py-4 px-6 rounded-2xl bg-gradient-to-r from-rose-600 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white font-bold text-base shadow-xl shadow-rose-950/40 transition active:scale-95 flex items-center justify-center gap-2 group cursor-pointer">
+        <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-        Iniciar Fase de Votación
+        <span>Iniciar Votación</span>
+        <span class="kbd-hint hidden sm:inline-block ml-1">V</span>
       </button>
 
     </section>
@@ -1371,26 +1587,26 @@
     <!-- ============================================== -->
     <!-- 4. VOTING PHASE                                -->
     <!-- ============================================== -->
-    <section id="phaseVoting" class="hidden space-y-6">
+    <section id="phaseVoting" class="hidden space-y-4 sm:space-y-5">
       
-      <div class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 shadow-xl text-center space-y-2">
-        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/20 uppercase tracking-wider">
-          Asamblea de Votación
+      <div class="bg-slate-900/90 rounded-2xl border border-slate-800 p-3.5 sm:p-4 shadow-xl text-center space-y-1">
+        <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/20 uppercase tracking-wider">
+          Votación
         </span>
         <h2 class="text-xl sm:text-2xl font-black text-white">¿Quién es el Impostor?</h2>
         <p class="text-xs sm:text-sm text-slate-300">
-          Asignen los votos de cada jugador señalando al sospechoso o votando para saltar la ronda.
+          Señala al sospechoso o salta la ronda.
         </p>
       </div>
 
       <!-- Current Voter Tracker / Selector -->
-      <div class="bg-slate-900 rounded-2xl border border-slate-800 p-4 space-y-4 shadow-lg">
+      <div class="bg-slate-900 rounded-2xl border border-slate-800 p-4 space-y-3.5 shadow-lg">
         
-        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-2.5">
           <div class="flex items-center gap-2.5">
             <span id="currentVoterAvatar" class="avatar-badge w-9 h-9 bg-slate-800 border border-slate-700">🦊</span>
             <div>
-              <div class="flex items-center gap-1.5 text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+              <div class="flex items-center gap-1.5 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                 <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span>
                 Turno de votar
               </div>
@@ -1403,7 +1619,7 @@
           </div>
         </div>
 
-        <p class="text-xs text-slate-400">Selecciona al jugador del cual sospechas:</p>
+        <p class="text-xs text-slate-400">Selecciona al sospechoso:</p>
 
         <!-- Candidate Cards Container -->
         <div id="votingCandidatesGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -1411,19 +1627,19 @@
         </div>
 
         <!-- Skip voting option -->
-        <button type="button" id="btnVoteSkip" class="w-full p-3 rounded-xl border border-slate-700/60 bg-slate-800/40 hover:bg-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-center gap-2 transition active:scale-95">
+        <button type="button" id="btnVoteSkip" class="w-full min-h-[44px] p-2.5 sm:p-3 rounded-xl border border-slate-700/60 bg-slate-800/40 hover:bg-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-center gap-2 transition active:scale-95">
           <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
           </svg>
-          No estoy seguro / Votar por Saltar (Nadie expulsado)
+          Saltar voto (Nadie expulsado)
         </button>
 
       </div>
 
       <!-- Current Tally Summary Card -->
-      <div class="bg-slate-950/60 rounded-xl border border-slate-800/80 p-3.5 space-y-2">
-        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Votos emitidos hasta el momento:</div>
-        <div id="liveVoteTallyList" class="flex flex-wrap gap-2 text-xs">
+      <div class="bg-slate-950/60 rounded-xl border border-slate-800/80 p-3 space-y-1.5">
+        <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Votos emitidos:</div>
+        <div id="liveVoteTallyList" class="flex flex-wrap gap-1.5 text-xs">
           <!-- Live vote chips filled by JS -->
         </div>
       </div>
@@ -1433,17 +1649,17 @@
     <!-- ============================================== -->
     <!-- 5. RESULT & REVEAL PHASE                       -->
     <!-- ============================================== -->
-    <section id="phaseResult" class="hidden space-y-6">
+    <section id="phaseResult" class="hidden space-y-4 sm:space-y-5">
       
       <!-- Dramatic Banner -->
-      <div id="resultBannerCard" class="rounded-3xl border p-7 text-center space-y-4 shadow-2xl relative overflow-hidden transition-all duration-500">
+      <div id="resultBannerCard" class="rounded-3xl border p-5 sm:p-6 text-center space-y-3 shadow-2xl relative overflow-hidden transition-all duration-500">
         
-        <div id="resultOutcomeIcon" class="w-20 h-20 mx-auto rounded-3xl flex items-center justify-center text-4xl shadow-xl">
+        <div id="resultOutcomeIcon" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-3xl flex items-center justify-center text-3xl sm:text-4xl shadow-xl">
           🏆
         </div>
 
-        <div class="space-y-1">
-          <div id="resultOutcomeSubtitle" class="text-xs font-black uppercase tracking-widest text-slate-400">
+        <div class="space-y-0.5">
+          <div id="resultOutcomeSubtitle" class="text-[11px] font-black uppercase tracking-widest text-slate-400">
             Fin de la Ronda
           </div>
           <h2 id="resultOutcomeTitle" class="text-2xl sm:text-3xl font-black tracking-tight text-white">
@@ -1456,9 +1672,9 @@
         </p>
 
         <!-- Sound Replay Button -->
-        <div class="pt-1 flex items-center justify-center">
-          <button type="button" id="btnReplayResultSound" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-black/40 hover:bg-black/60 text-slate-200 hover:text-white border border-white/15 transition active:scale-95 shadow-md group">
-            <svg class="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="pt-0.5 flex items-center justify-center">
+          <button type="button" id="btnReplayResultSound" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-black/40 hover:bg-black/60 text-slate-200 hover:text-white border border-white/15 transition active:scale-95 shadow-md group">
+            <svg class="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
             </svg>
             <span id="btnReplayResultSoundText">Repetir tema musical</span>
@@ -1467,42 +1683,42 @@
       </div>
 
       <!-- Expelled Player & Identity Card -->
-      <div class="bg-slate-900 rounded-2xl border border-slate-800 p-5 space-y-4 shadow-xl">
+      <div class="bg-slate-900 rounded-2xl border border-slate-800 p-4 sm:p-5 space-y-3.5 shadow-xl">
         <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-slate-800 pb-2">
           Resultado de la Votación
         </h3>
         
-        <div id="expelledSummaryBlock" class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-950/70 border border-slate-800">
+        <div id="expelledSummaryBlock" class="flex items-center justify-between p-3 rounded-2xl bg-slate-950/70 border border-slate-800">
           <div class="flex items-center gap-3">
-            <span id="expelledPlayerAvatar" class="avatar-badge w-12 h-12 bg-slate-900 border border-slate-700 text-2xl">👤</span>
+            <span id="expelledPlayerAvatar" class="avatar-badge w-11 h-11 bg-slate-900 border border-slate-700 text-xl">👤</span>
             <div>
-              <span class="text-xs text-slate-400 block font-medium">Jugador más votado:</span>
-              <span id="expelledPlayerName" class="text-lg font-black text-white">Mateo</span>
+              <span class="text-[11px] text-slate-400 block font-medium">Jugador más votado:</span>
+              <span id="expelledPlayerName" class="text-base sm:text-lg font-black text-white">Mateo</span>
             </div>
           </div>
-          <div id="expelledPlayerBadge" class="px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-sm">
+          <div id="expelledPlayerBadge" class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-sm">
             <!-- Impostor / Inocente badge -->
           </div>
         </div>
 
         <!-- Secret Word, Impostor Clue & Real Impostors Reveal -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-          <div class="p-3 rounded-xl bg-slate-950/50 border border-slate-800 space-y-1">
-            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Palabra Secreta:</span>
-            <div id="resultSecretWord" class="text-base font-black text-emerald-400 break-words">Pizza</div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
+          <div class="p-2.5 rounded-xl bg-slate-950/50 border border-slate-800 space-y-0.5">
+            <span class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">Palabra Secreta:</span>
+            <div id="resultSecretWord" class="text-sm sm:text-base font-black text-emerald-400 break-words">Pizza</div>
           </div>
-          <div class="p-3 rounded-xl bg-slate-950/50 border border-slate-800 space-y-1">
-            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Pista del Impostor:</span>
-            <div id="resultHintWord" class="text-base font-black text-amber-400 break-words">Masa</div>
+          <div class="p-2.5 rounded-xl bg-slate-950/50 border border-slate-800 space-y-0.5">
+            <span class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">Pista del Impostor:</span>
+            <div id="resultHintWord" class="text-sm sm:text-base font-black text-amber-400 break-words">Masa</div>
           </div>
-          <div class="p-3 rounded-xl bg-slate-950/50 border border-slate-800 space-y-1">
-            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Impostor(es) Real(es):</span>
-            <div id="resultRealImpostors" class="text-base font-black text-rose-400 break-words">Mateo</div>
+          <div class="p-2.5 rounded-xl bg-slate-950/50 border border-slate-800 space-y-0.5">
+            <span class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">Impostor(es):</span>
+            <div id="resultRealImpostors" class="text-sm sm:text-base font-black text-rose-400 break-words">Mateo</div>
           </div>
         </div>
 
         <!-- Votes Breakdown details -->
-        <div class="space-y-1.5 pt-2">
+        <div class="space-y-1 pt-1">
           <span class="text-xs font-semibold text-slate-400">Desglose de votos:</span>
           <div id="resultVotesBreakdown" class="space-y-1 text-xs text-slate-300">
             <!-- Filled dynamically -->
@@ -1510,20 +1726,31 @@
         </div>
       </div>
 
+      <!-- Copy / Share Results Summary Button -->
+      <button type="button" id="btnCopyResultSummary" class="w-full min-h-[48px] py-3 px-4 rounded-2xl bg-slate-900/90 hover:bg-slate-800 text-slate-200 hover:text-white font-semibold text-xs sm:text-sm border border-slate-700/80 transition active:scale-95 flex items-center justify-center gap-2 shadow-md group cursor-pointer" title="Copiar resumen con formato para WhatsApp o Telegram (C)">
+        <svg class="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+        </svg>
+        <span id="btnCopyResultSummaryText">📱 Compartir Resumen para WhatsApp</span>
+        <span class="kbd-hint hidden sm:inline-block ml-1">C</span>
+      </button>
+
       <!-- Action Buttons -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <button type="button" id="btnRematch" class="w-full py-4 px-5 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow-xl shadow-indigo-950/50 transition active:scale-95 flex items-center justify-center gap-2">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+        <button type="button" id="btnRematch" class="w-full min-h-[48px] py-3.5 px-4 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow-xl shadow-indigo-950/50 transition active:scale-95 flex items-center justify-center gap-2 group cursor-pointer">
+          <svg class="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
           </svg>
-          Revancha (Mismos Jugadores)
+          <span>Revancha (Mismos Jugadores)</span>
+          <span class="kbd-hint hidden sm:inline-block ml-1">R</span>
         </button>
 
-        <button type="button" id="btnNewGameSetup" class="w-full py-4 px-5 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm border border-slate-700 transition active:scale-95 flex items-center justify-center gap-2">
-          <svg class="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button type="button" id="btnNewGameSetup" class="w-full min-h-[48px] py-3.5 px-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm border border-slate-700 transition active:scale-95 flex items-center justify-center gap-2 group cursor-pointer">
+          <svg class="w-4 h-4 text-slate-300 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
           </svg>
-          Nueva Configuración
+          <span>Nueva Partida</span>
+          <span class="kbd-hint hidden sm:inline-block ml-1">N</span>
         </button>
       </div>
 
@@ -1534,7 +1761,7 @@
   <!-- ============================================== -->
   <!-- MODAL: SCOREBOARD / LEADERBOARD               -->
   <!-- ============================================== -->
-  <div id="modalScoreboard" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+  <div id="modalScoreboard" role="dialog" aria-modal="true" aria-labelledby="modalScoreboardTitle" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-md w-full p-6 space-y-5 shadow-2xl relative max-h-[90vh] flex flex-col">
       
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
@@ -1542,7 +1769,7 @@
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
-          <h3 class="text-lg font-black text-white">Tabla de Posiciones</h3>
+          <h3 id="modalScoreboardTitle" class="text-lg font-black text-white">Tabla de Posiciones</h3>
         </div>
         <button type="button" id="btnCloseScoreboard" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1609,7 +1836,7 @@
   <!-- ============================================== -->
   <!-- MODAL: HOW TO PLAY / RULES                     -->
   <!-- ============================================== -->
-  <div id="modalRules" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+  <div id="modalRules" role="dialog" aria-modal="true" aria-labelledby="modalRulesTitle" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-lg w-full p-6 space-y-5 shadow-2xl relative max-h-[90vh] flex flex-col">
       
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
@@ -1617,7 +1844,7 @@
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <h3 class="text-lg font-black text-white">¿Cómo Jugar al Impostor?</h3>
+          <h3 id="modalRulesTitle" class="text-lg font-black text-white">¿Cómo Jugar al Impostor?</h3>
         </div>
         <button type="button" id="btnCloseRules" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1626,63 +1853,69 @@
         </button>
       </div>
 
-      <div class="flex-1 overflow-y-auto space-y-4 text-xs sm:text-sm text-slate-300 pr-1 leading-relaxed">
+      <div class="flex-1 overflow-y-auto space-y-3 text-xs sm:text-sm text-slate-300 pr-1 leading-relaxed">
         
-        <div class="space-y-1">
+        <div class="space-y-1 p-2.5 rounded-xl bg-slate-950/60 border border-slate-800">
           <h4 class="font-bold text-white flex items-center gap-1.5">
             <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-mono">1</span>
-            Fase de Asignación Secreta
+            Asignación Secreta
           </h4>
-          <p class="text-slate-400 pl-6">
-            Pasa el dispositivo a cada jugador. Cada persona verá en secreto si es <strong>Tripulante</strong> o <strong>Impostor</strong>. Los tripulantes ven la palabra secreta. En <strong>Modo Normal</strong>, el impostor siempre recibe una <strong>palabra pista</strong> para poder defenderse sin ser descubierto. En <strong>Modo Difícil</strong>, el impostor no tiene palabra pista y juega a ciegas.
+          <p class="text-slate-400 pl-6 text-xs">
+            Pasa el móvil en privado. Los tripulantes ven la palabra secreta. En <strong>Modo Normal</strong>, el impostor recibe una <strong>palabra pista</strong> para camuflarse. En <strong>Modo Difícil</strong>, juega a ciegas.
           </p>
         </div>
 
-        <div class="space-y-1">
+        <div class="space-y-1 p-2.5 rounded-xl bg-slate-950/60 border border-slate-800">
           <h4 class="font-bold text-white flex items-center gap-1.5">
             <span class="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs font-mono">2</span>
-            Fase de Discusión y Pistas
+            Debate y Pistas
           </h4>
-          <p class="text-slate-400 pl-6">
-            Por orden, cada jugador dice una palabra o frase corta relacionada con la palabra secreta.
-            <br/><span class="text-amber-300">¡Cuidado!</span> Si tu pista es demasiado obvia, el impostor la descubrirá. Si es demasiado rara, ¡sospecharán de ti!
+          <p class="text-slate-400 pl-6 text-xs">
+            Por turnos, cada jugador dice una pista sutil. Si tu pista es muy obvia, el impostor la deduce; si es muy rara, dudarán de ti.
           </p>
         </div>
 
-        <div class="space-y-1">
+        <div class="space-y-1 p-2.5 rounded-xl bg-slate-950/60 border border-slate-800">
           <h4 class="font-bold text-white flex items-center gap-1.5">
             <span class="w-5 h-5 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center text-xs font-mono">3</span>
-            Votación y Expulsión
+            Votación
           </h4>
-          <p class="text-slate-400 pl-6">
-            Al sonar la alarma o terminar el tiempo, se abre la votación. Cada jugador emite su voto contra el principal sospechoso. El jugador con más votos es expulsado.
+          <p class="text-slate-400 pl-6 text-xs">
+            Voten al principal sospechoso. El más votado queda expulsado.
           </p>
         </div>
 
-        <div class="space-y-1">
+        <div class="space-y-1 p-2.5 rounded-xl bg-rose-950/30 border border-rose-900/50">
           <h4 class="font-bold text-rose-400 flex items-center gap-1.5">
             <span class="w-5 h-5 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center text-xs font-mono">⚡</span>
-            Modo Difícil: Contrarreloj Extremo
+            Modo Difícil (Contrarreloj)
           </h4>
-          <div class="text-slate-400 pl-6 space-y-1 text-xs">
-            <p>• <strong>Sin Palabra Pista:</strong> En Modo Difícil el impostor NO recibe palabra pista (en Modo Normal siempre tiene una palabra pista asignada para defenderse).</p>
-            <p>• <strong>Categoría Oculta:</strong> La categoría se escoge al azar en absoluto secreto; nadie la sabe antes de iniciar.</p>
-            <p>• <strong>Sin Prórrogas:</strong> El botón de +30 segundos queda bloqueado. Al llegar a 00:00, la votación inicia de inmediato.</p>
-            <p>• <strong>Voto Rápido:</strong> Cada jugador tiene solo 15 segundos para votar antes de que se agote su turno.</p>
-            <p>• <strong>Empate Favorece al Impostor:</strong> Ante empates o saltos de ronda, ¡los impostores ganan automáticamente con bonificación de +4 puntos!</p>
+          <div class="text-slate-400 pl-6 space-y-0.5 text-[11px]">
+            <p>• <strong>Sin pista:</strong> El impostor no recibe palabra pista y la categoría es secreta.</p>
+            <p>• <strong>Sin prórrogas:</strong> Votos contrarreloj de 15s y empate a favor del impostor (+4 pts).</p>
           </div>
         </div>
 
-        <div class="space-y-1">
+        <div class="space-y-1 p-2.5 rounded-xl bg-slate-950/60 border border-slate-800">
           <h4 class="font-bold text-white flex items-center gap-1.5">
             <span class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs font-mono">4</span>
-            Puntuación
+            Puntos
           </h4>
-          <ul class="list-disc pl-10 text-slate-400 space-y-1">
-            <li><strong>Tripulantes ganan (+2 puntos, o +3 en Modo Difícil):</strong> Si expulsan al impostor.</li>
-            <li><strong>Impostor gana (+3 puntos, o +4 en Modo Difícil):</strong> Si engaña al grupo, empatan o expulsan a un inocente.</li>
-            <li><strong>Acierto individual (+1 punto):</strong> A quien haya votado correctamente al impostor.</li>
+          <ul class="list-disc pl-9 text-slate-400 space-y-0.5 text-xs">
+            <li><strong>Tripulantes:</strong> +2 pts (+3 en Difícil) al expulsar al impostor.</li>
+            <li><strong>Impostor:</strong> +3 pts (+4 en Difícil) si sobrevive, empata o engaña.</li>
+            <li><strong>Voto acertado:</strong> +1 pt individual a quien descubra al impostor.</li>
           </ul>
+        </div>
+
+        <div class="space-y-1 p-2.5 rounded-xl bg-emerald-950/30 border border-emerald-900/50">
+          <h4 class="font-bold text-emerald-400 flex items-center gap-1.5">
+            <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-mono">🎴</span>
+            Memoria Ilimitada (600 Palabras)
+          </h4>
+          <p class="text-slate-400 pl-6 text-xs">
+            600 palabras oficiales sin repeticiones en 7 categorías. Puedes añadir tus propias palabras en <em>Banco de Palabras</em>.
+          </p>
         </div>
 
       </div>
@@ -1690,6 +1923,169 @@
       <div class="border-t border-slate-800 pt-3">
         <button type="button" id="btnCloseRulesBottom" class="w-full py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs transition">
           ¡Entendido, a jugar!
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: DECK MANAGER & INFINITE MEMORY BANK     -->
+  <!-- ============================================== -->
+  <div id="modalDeckManager" role="dialog" aria-modal="true" aria-labelledby="modalDeckManagerTitle" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-xl w-full p-5 sm:p-6 space-y-4 shadow-2xl relative max-h-[92vh] flex flex-col">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-2 text-emerald-400">
+          <span class="text-2xl">🧠</span>
+          <div>
+            <h3 id="modalDeckManagerTitle" class="text-base sm:text-lg font-black text-white leading-tight">Banco de Memoria Ilimitada</h3>
+            <p class="text-[11px] text-slate-400">Garantía de cero repeticiones y expansión sin límites</p>
+          </div>
+        </div>
+        <button type="button" id="btnCloseDeckManager" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div class="flex-1 overflow-y-auto space-y-4 text-xs sm:text-sm text-slate-300 pr-1 leading-relaxed">
+        
+        <!-- Stats Row -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div class="deck-stat-box p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 text-center">
+            <span class="deck-stat-lbl text-[10px] uppercase font-bold text-slate-400 block">Oficiales</span>
+            <span class="deck-stat-num text-lg font-black text-emerald-400" id="statOfficialWords">600</span>
+            <span class="text-[9px] text-slate-500 block">Reparto justo 7 cats</span>
+          </div>
+          <div class="deck-stat-box p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 text-center">
+            <span class="deck-stat-lbl text-[10px] uppercase font-bold text-slate-400 block">Personalizadas</span>
+            <span class="deck-stat-num text-lg font-black text-purple-400" id="statCustomWords">0</span>
+            <span class="text-[9px] text-slate-500 block">Tus palabras</span>
+          </div>
+          <div class="deck-stat-box p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 text-center">
+            <span class="deck-stat-lbl text-[10px] uppercase font-bold text-slate-400 block">Jugadas</span>
+            <span class="deck-stat-num text-lg font-black text-rose-400" id="statPlayedWords">0</span>
+            <span class="text-[9px] text-slate-500 block">En memoria</span>
+          </div>
+          <div class="deck-stat-box p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 text-center">
+            <span class="deck-stat-lbl text-[10px] uppercase font-bold text-slate-400 block">Disponibles</span>
+            <span class="deck-stat-num text-lg font-black text-sky-400" id="statAvailableWords">600</span>
+            <span class="text-[9px] text-slate-500 block">Sin jugar</span>
+          </div>
+        </div>
+
+        <!-- Strict Infinite Memory Switch -->
+        <label class="flex items-start justify-between p-3 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-900 border border-emerald-500/30 cursor-pointer transition group">
+          <div class="pr-2 space-y-0.5">
+            <div class="text-xs font-bold text-emerald-300 flex items-center gap-1.5">
+              <span>🔒 Memoria Ilimitada Estricta (Nunca Repetir)</span>
+            </div>
+            <p class="text-[11px] text-slate-400 leading-normal">
+              Las palabras jugadas se guardan de forma permanente e ilimitada. <strong>Jamás se volverán a repetir</strong> hasta que decidas reiniciar la categoría o añadir palabras nuevas.
+            </p>
+          </div>
+          <input type="checkbox" id="chkStrictInfiniteMemory" checked class="w-5 h-5 mt-1 rounded-md accent-emerald-500 bg-slate-900 border-slate-700 cursor-pointer shrink-0" />
+        </label>
+
+        <!-- Form: Add Custom Words -->
+        <div class="p-3.5 rounded-2xl bg-slate-950/70 border border-slate-800 space-y-3">
+          <div class="flex items-center justify-between">
+            <h4 class="font-bold text-white text-xs flex items-center gap-1.5">
+              <span>➕</span> Añadir Palabra a la Baraja Permanente
+            </h4>
+            <span class="text-[10px] text-purple-400 font-semibold bg-purple-500/10 px-2 py-0.5 rounded-full border border-purple-500/20">Ilimitado</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            <div>
+              <label for="inputManagerCatSelect" class="text-[11px] text-slate-400 block mb-1">Categoría:</label>
+              <select id="inputManagerCatSelect" class="w-full bg-slate-900 text-slate-100 rounded-lg px-2.5 py-1.5 text-xs border border-slate-700 focus:outline-none focus:ring-1 focus:ring-emerald-500">
+                <option value="comida">🍕 Comida y Bebida</option>
+                <option value="lugares">🌍 Lugares del Mundo</option>
+                <option value="animales">🦁 Reino Animal</option>
+                <option value="objetos">🎒 Objetos Cotidianos</option>
+                <option value="profesiones">🧑‍🚒 Profesiones y Oficios</option>
+                <option value="deportes">⚽ Deportes y Juegos</option>
+                <option value="cine">🎬 Películas y Famosos</option>
+              </select>
+            </div>
+            <div>
+              <label for="inputManagerNewWord" class="text-[11px] text-slate-400 block mb-1">Palabra Secreta:</label>
+              <input type="text" id="inputManagerNewWord" placeholder="Ej: Lasagna de espinaca" class="w-full bg-slate-900 text-white rounded-lg px-2.5 py-1.5 text-xs border border-slate-700 focus:outline-none focus:ring-1 focus:ring-emerald-500" />
+            </div>
+            <div>
+              <label for="inputManagerNewHint" class="text-[11px] text-slate-400 block mb-1">Pista (Modo Normal):</label>
+              <input type="text" id="inputManagerNewHint" placeholder="Ej: Horno, Pasta" class="w-full bg-slate-900 text-white rounded-lg px-2.5 py-1.5 text-xs border border-slate-700 focus:outline-none focus:ring-1 focus:ring-emerald-500" />
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-1">
+            <span id="managerAddFeedback" class="text-[11px] text-emerald-400 font-semibold hidden">¡Palabra guardada con éxito!</span>
+            <button type="button" id="btnAddWordToPermanentDeck" class="ml-auto px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition flex items-center gap-1.5 active:scale-95 shadow">
+              <span>💾</span>
+              <span>Guardar en Baraja</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Word Explorer -->
+        <div class="space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h4 class="font-bold text-white text-xs flex items-center gap-1.5">
+              <span>🔍</span> Explorar Palabras en Baraja
+            </h4>
+            <div class="flex items-center gap-2">
+              <select id="selectManagerFilterCategory" class="bg-slate-950 text-slate-200 rounded-lg px-2 py-1 text-xs border border-slate-700 focus:outline-none">
+                <option value="all">Todas las categorías</option>
+                <option value="comida">🍕 Comida y Bebida</option>
+                <option value="lugares">🌍 Lugares del Mundo</option>
+                <option value="animales">🦁 Reino Animal</option>
+                <option value="objetos">🎒 Objetos Cotidianos</option>
+                <option value="profesiones">🧑‍🚒 Profesiones y Oficios</option>
+                <option value="deportes">⚽ Deportes y Juegos</option>
+                <option value="cine">🎬 Películas y Famosos</option>
+              </select>
+              <input type="text" id="inputSearchDeckWord" placeholder="Buscar..." class="w-24 sm:w-32 bg-slate-950 text-slate-200 rounded-lg px-2 py-1 text-xs border border-slate-700 focus:outline-none focus:ring-1 focus:ring-emerald-500" />
+            </div>
+          </div>
+
+          <!-- Word List Container -->
+          <div id="deckWordsChipsList" class="p-3 rounded-2xl bg-slate-950/80 border border-slate-800 max-h-48 overflow-y-auto flex flex-wrap gap-1.5 text-xs">
+            <!-- Chips rendered dynamically -->
+          </div>
+
+          <div class="flex items-center justify-between text-[10px] text-slate-400 px-1">
+            <span class="flex items-center gap-2">
+              <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span> Disponible
+              <span class="inline-block w-2 h-2 rounded-full bg-slate-500"></span> Jugada
+              <span class="inline-block w-2 h-2 rounded-full bg-purple-400"></span> Personalizada
+            </span>
+            <span id="txtManagerFilteredCount" class="font-mono">Mostrando 600 palabras</span>
+          </div>
+        </div>
+
+        <!-- Danger Zone / Reset options -->
+        <div class="pt-2 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2">
+          <button type="button" id="btnResetSelectedCatHistory" class="text-xs text-amber-400 hover:text-amber-300 underline transition flex items-center gap-1 active:scale-95">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+            Reiniciar categoría actual
+          </button>
+          <button type="button" id="btnResetAllInfiniteHistory" class="text-xs text-rose-400 hover:text-rose-300 underline transition flex items-center gap-1 active:scale-95">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+            Reiniciar todo el historial de memoria
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="border-t border-slate-800 pt-3">
+        <button type="button" id="btnCloseDeckManagerBottom" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs transition active:scale-98">
+          Cerrar
         </button>
       </div>
 
@@ -1711,55 +2107,145 @@
      * 100% Vanilla JavaScript ES6+
      */
 
-    // -------------------------------------------------------------
-    // Banco de Palabras por Categoría en Español
+        // -------------------------------------------------------------
+    // Banco de Palabras por Categoría en Español (600 Palabras Oficiales - Reparto Justo)
     // -------------------------------------------------------------
     const CATEGORIES = {
       comida: {
         nombre: 'Comida y Bebida',
         palabras: [
-          'Pizza', 'Sushi', 'Hamburguesa', 'Paella', 'Tacos', 'Chocolate', 'Helado',
-          'Empanada', 'Café', 'Ensalada', 'Asado', 'Guacamole', 'Churros', 'Pasta',
-          'Croissant', 'Sopa', 'Arepa', 'Ceviche', 'Panqueque', 'Queso'
+          'Pizza', 'Sushi', 'Hamburguesa', 'Paella', 'Tacos',
+          'Chocolate', 'Helado', 'Empanada', 'Café', 'Ensalada',
+          'Asado', 'Guacamole', 'Churros', 'Pasta', 'Croissant',
+          'Sopa', 'Arepa', 'Ceviche', 'Panqueque', 'Queso',
+          'Burrito', 'Lasaña', 'Hot Dog', 'Ramen', 'Donas',
+          'Nachos', 'Falafel', 'Crepa', 'Brownie', 'Sandwich',
+          'Waffle', 'Tamal', 'Risotto', 'Bagel', 'Tortilla española',
+          'Yogur', 'Flan', 'Té verde', 'Vino tinto', 'Cerveza',
+          'Cereal', 'Tarta de manzana', 'Palomitas de maíz', 'Muffin', 'Gazpacho',
+          'Tiramisú', 'Canelones', 'Hummus', 'Fondue de queso', 'Guiso de lentejas',
+          'Salmorejo', 'Cheesecake', 'Empanadilla de atún', 'Crema de calabaza', 'Churrasco',
+          'Pollo frito', 'Crema catalana', 'Carpaccio', 'Smoothie de frutas', 'Tarta de queso',
+          'Albóndigas', 'Croquetas', 'Limonada', 'Margarita', 'Mojito',
+          'Totopos con queso', 'Perrito caliente', 'Milanesa', 'Gnocchi', 'Cuscús',
+          'Tofu', 'Macedonia de frutas', 'Panna cotta', 'Nuggets de pollo', 'Quesadilla',
+          'Fajitas', 'Pintxo', 'Natillas', 'Sidra', 'Sangría',
+          'Macarons', 'Polenta', 'Calamares a la romana', 'Costillas a la barbacoa', 'Tartar de salmón',
+          'Profiteroles'
         ]
       },
       lugares: {
         nombre: 'Lugares del Mundo',
         palabras: [
-          'Hospital', 'Playa', 'Aeropuerto', 'Museo', 'Cine', 'Escuela', 'Biblioteca',
-          'Supermercado', 'Gimnasio', 'Hotel', 'Parque de diversiones', 'Restaurante',
-          'Estación de tren', 'Zoológico', 'Submarino', 'Estadio', 'Castillo', 'Iglesia'
+          'Hospital', 'Playa', 'Aeropuerto', 'Museo', 'Cine',
+          'Escuela', 'Biblioteca', 'Supermercado', 'Gimnasio', 'Hotel',
+          'Parque de diversiones', 'Restaurante', 'Estación de tren', 'Zoológico', 'Submarino',
+          'Estadio', 'Castillo', 'Iglesia', 'Estación espacial', 'Pirámides de Egipto',
+          'Gran Cañón', 'Torre Eiffel', 'Selva amazónica', 'Desierto del Sahara', 'Volcán',
+          'Cueva subterránea', 'Casino', 'Banco', 'Prisión', 'Barco pirata',
+          'Granja', 'Planetario', 'Faro marítimo', 'Centro comercial', 'Parque nacional',
+          'Teatro de ópera', 'Estación de esquí', 'Laboratorio secreto', 'Spa de relajación', 'Cementerio',
+          'Estación de policía', 'Parque acuático', 'Fábrica abandonada', 'Isla desierta', 'Observatorio astronómico',
+          'Machu Picchu', 'Coliseo romano', 'Muralla China', 'Taj Mahal', 'Cataratas del Niágara',
+          'Torre de Pisa', 'Acuario marino', 'Isla de Pascua', 'Mercado flotante', 'Templo budista',
+          'Refugio de montaña', 'Oasis del desierto', 'Trinchera submarina', 'Estación de metro', 'Búnker subterráneo',
+          'Panteón de París', 'Stonehenge', 'Canales de Venecia', 'Monte Everest', 'Catedral de Notre Dame',
+          'Acrópolis de Atenas', 'Times Square', 'Central Park', 'Big Ben', 'Palacio de Versalles',
+          'Disneyland', 'Chichén Itzá', 'Cristo Redentor', 'Isla de Santorini', 'Fiordos noruegos',
+          'Plaza Roja de Moscú', 'Puerta de Brandeburgo', 'Cueva de cristales', 'Mina de carbón', 'Estación de bomberos',
+          'Campamento en el bosque', 'Plataforma petrolera', 'Autódromo de carreras', 'Puerto marítimo', 'Jardín botánico',
+          'Bulevar de Hollywood'
         ]
       },
       animales: {
         nombre: 'Reino Animal',
         palabras: [
-          'León', 'Delfín', 'Pingüino', 'Elefante', 'Camaleón', 'Canguro', 'Águila',
-          'Perro', 'Gato', 'Tiburón', 'Jirafa', 'Pulpo', 'Oso polar', 'Murciélago',
-          'Caballo', 'Koala', 'Cocodrilo', 'Flamenco', 'Lobo', 'Tortuga'
+          'León', 'Delfín', 'Pingüino', 'Elefante', 'Camaleón',
+          'Canguro', 'Águila', 'Perro', 'Gato', 'Tiburón',
+          'Jirafa', 'Pulpo', 'Oso polar', 'Murciélago', 'Caballo',
+          'Koala', 'Cocodrilo', 'Flamenco', 'Lobo', 'Tortuga',
+          'Tigre', 'Chimpancé', 'Perezoso', 'Búho', 'Medusa',
+          'Oso panda', 'Rinoceronte', 'Hipopótamo', 'Cebra', 'Zorro',
+          'Castor', 'Escorpión', 'Camello', 'Erizo', 'Halcón',
+          'Guacamayo', 'Rana dardo', 'Ornitorrinco', 'Hiena', 'Mantarraya',
+          'Ardilla', 'Nutria', 'Gorila', 'Ballena azul', 'Tejón',
+          'Jaguar', 'Lémur', 'Suricata', 'Mantis religiosa', 'Pez payaso',
+          'Pez espada', 'Pez globo', 'Búfalo', 'Tucán', 'Cacatúa',
+          'Panda rojo', 'Foca', 'Capibara', 'Lobo marino', 'Camaleón pantera',
+          'Guepardo', 'Cobra real', 'Pelícano', 'Morsa', 'Oso pardo',
+          'Ciervo', 'Avestruz', 'Cisne', 'Pavo real', 'Calamar gigante',
+          'Pantera negra', 'Hámster', 'Hurón', 'Alce', 'Armadillo',
+          'Antílope', 'Piraña', 'Ajolote', 'Wómbat', 'Salamandra',
+          'Pez león', 'Narval', 'Orca', 'Coyote', 'Lucérnaga',
+          'Colibrí'
         ]
       },
       objetos: {
         nombre: 'Objetos Cotidianos',
         palabras: [
           'Teléfono celular', 'Reloj de pulsera', 'Paraguas', 'Llaves', 'Guitarra',
-          'Espejo', 'Lámpara', 'Mochila', 'Cámara fotográfica', 'Zapatos', 'Auriculares',
-          'Billetera', 'Bicicleta', 'Gafas de sol', 'Tenedor', 'Almohada', 'Tijeras'
+          'Espejo', 'Lámpara', 'Mochila', 'Cámara fotográfica', 'Zapatos',
+          'Auriculares', 'Billetera', 'Bicicleta', 'Gafas de sol', 'Tenedor',
+          'Almohada', 'Tijeras', 'Brújula', 'Linterna', 'Monopatín',
+          'Cepillo de dientes', 'Microondas', 'Plancha de ropa', 'Sartén antiadherente', 'Maleta de viaje',
+          'Ventilador', 'Termo de café', 'Destornillador', 'Candado', 'Prismáticos',
+          'Casco de seguridad', 'Drone', 'Teclado mecánico', 'Botella de agua', 'Vela aromática',
+          'Esponja de baño', 'Cuchillo de chef', 'Aspiradora', 'Calculadora', 'Cinta adhesiva',
+          'Mando a distancia', 'Abrelatas', 'Lupa de aumento', 'Termómetro', 'Reloj de arena',
+          'Sacacorchos', 'Regla graduada', 'Perchero', 'Linterna frontal', 'Abrebotellas',
+          'Maletín ejecutivo', 'Despertador', 'Exprimidor de cítricos', 'Cinta métrica', 'Gramófono',
+          'Rallador de queso', 'Lámpara de lava', 'Grapadora', 'Secador de pelo', 'Altavoz bluetooth',
+          'Martillo', 'Taladro eléctrico', 'Taza térmica', 'Cargador de móvil', 'Libreta de notas',
+          'Bolígrafo', 'Telescopio', 'Cafetera express', 'Tostadora de pan', 'Licuadora',
+          'Batidora de mano', 'Altavoz inteligente', 'Cámara de video', 'Monóculo', 'Caja fuerte',
+          'Patinete eléctrico', 'Silla de oficina', 'Impermeable', 'Almohadilla de ratón', 'Colchón inflable',
+          'Ukelele', 'Piano de cola', 'Microscopio', 'Walkie-talkie', 'Powerbank',
+          'Pendrive USB'
         ]
       },
       profesiones: {
         nombre: 'Profesiones y Oficios',
         palabras: [
-          'Médico', 'Astronauta', 'Bombero', 'Detective', 'Chef', 'Piloto', 'Pintor',
-          'Abogado', 'Profesor', 'Músico', 'Arquitecto', 'Fotógrafo', 'Científico',
-          'Jardinero', 'Carpintero', 'Bailarín', 'Periodista', 'Veterinario'
+          'Médico', 'Astronauta', 'Bombero', 'Detective', 'Chef',
+          'Piloto', 'Pintor', 'Abogado', 'Profesor', 'Músico',
+          'Arquitecto', 'Fotógrafo', 'Científico', 'Jardinero', 'Carpintero',
+          'Bailarín', 'Periodista', 'Veterinario', 'Arqueólogo', 'Buzo profesional',
+          'Electricista', 'Juez', 'Cirujano', 'Fontanero', 'Minero',
+          'Cerrajero', 'Cartero', 'Guía turístico', 'Meteorólogo', 'Paramédico',
+          'Joyero', 'Albañil', 'Apicultor', 'Pescador', 'Conductor de autobús',
+          'Diseñador gráfico', 'Panadero', 'Escultor', 'Sommelier', 'Guardaespaldas',
+          'Astronauta mecánico', 'Traductor', 'Guionista', 'Barista', 'Farmacéutico',
+          'Astrónomo', 'Geólogo', 'Paleontólogo', 'Oceanógrafo', 'Piloto de drones',
+          'Ilusionista / Mago', 'Ebanista', 'Escenógrafo', 'Podólogo', 'Herrero',
+          'Croupier de casino', 'Cartógrafo', 'Lutier', 'Taxidermista', 'Ceramista',
+          'Diplomático', 'Psicólogo', 'Enfermero', 'Biólogo marino', 'Bibliotecario',
+          'Peluquero', 'Sastre', 'Florista', 'Entrenador personal', 'Director de orquesta',
+          'Actor de doblaje', 'Especialista de cine', 'Azafata de vuelo', 'Capitán de barco', 'Mecánico de aviación',
+          'Optometrista', 'Dentista', 'Fisioterapeuta', 'Ingeniero de sonido', 'Programador informático',
+          'Guardián forestal', 'Antropólogo', 'Historiador', 'Cocinero de sushi', 'Perito judicial',
+          'Acróbata de circo'
         ]
       },
       deportes: {
         nombre: 'Deportes y Juegos',
         palabras: [
-          'Fútbol', 'Baloncesto', 'Tenis', 'Natación', 'Boxeo', 'Voleibol', 'Ciclismo',
-          'Esquí', 'Surf', 'Béisbol', 'Atletismo', 'Patinaje', 'Golf', 'Ajedrez', 'Rugby'
+          'Fútbol', 'Baloncesto', 'Tenis', 'Natación', 'Boxeo',
+          'Voleibol', 'Ciclismo', 'Esquí', 'Surf', 'Béisbol',
+          'Atletismo', 'Patinaje', 'Golf', 'Ajedrez', 'Rugby',
+          'Escalada', 'Tiro con arco', 'Esgrima', 'Karate', 'Paracaidismo',
+          'Bádminton', 'Polo acuático', 'Remo', 'Motociclismo', 'Snowboard',
+          'Hockey sobre hielo', 'Halterofilia', 'Ping pong', 'Gimnasia rítmica', 'Bolos',
+          'Dardos', 'Rally', 'Rafting', 'Buceo libre', 'Yoga',
+          'Parkour', 'Triatlón', 'Curling', 'Vela náutica', 'Billar',
+          'Patinaje sobre hielo', 'Lucha libre', 'Espeleología', 'Skateboard', 'Kitesurf',
+          'Paintball', 'Tiro con rifle', 'Carreras de karts', 'Parapente', 'Lanzamiento de jabalina',
+          'Ultimate Frisbee', 'Bobsleigh', 'Salto con pértiga', 'Vela oceánica', 'Muay Thai',
+          'Waterpolo', 'Judo', 'Taekwondo', 'Motocross', 'Windsurf',
+          'Pádel', 'Squash', 'Handball', 'Críquet', 'Sóftbol',
+          'Lanzamiento de disco', 'Salto de longitud', 'Maratón', 'Carrera de obstáculos', 'Hockey sobre patines',
+          'Hockey sobre hierba', 'Gimnasia artística', 'Alpinismo', 'Pesca deportiva', 'Submarinismo',
+          'Frontenis', 'Vóley playa', 'Póker', 'Dominó', 'Futbolín',
+          'Carrera de caballos', 'Tiro al plato', 'Wakeboard', 'Piragüismo', 'Esquí acuático'
         ]
       },
       cine: {
@@ -1767,14 +2253,28 @@
         palabras: [
           'Harry Potter', 'Star Wars', 'Titanic', 'El Padrino', 'Parque Jurásico',
           'Spider-Man', 'El Señor de los Anillos', 'Matrix', 'Avatar', 'Shrek',
-          'Batman', 'Piratas del Caribe', 'Toy Story', 'Gladiador'
+          'Batman', 'Piratas del Caribe', 'Toy Story', 'Gladiador', 'Los Vengadores',
+          'Indiana Jones', 'Interestelar', 'Stranger Things', 'Breaking Bad', 'Juego de Tronos',
+          'Los Simpson', 'Volver al Futuro', 'El Rey León', 'Terminator', 'Sherlock Holmes',
+          'Mi Pobre Angelito', 'Cazafantasmas', 'Men in Black', 'Coco', 'Buscando a Nemo',
+          'Los Juegos del Hambre', 'Los Increíbles', 'Willy Wonka', 'Pesadilla antes de Navidad', 'El Origen (Inception)',
+          'Alicia en el País de las Maravillas', 'Aladdín', 'Mulan', 'Karate Kid', 'Wall-E',
+          'Monstruos S.A.', 'La La Land', 'El Show de Truman', 'Mad Max', 'Scooby-Doo',
+          'Jurassic World', 'Misión Imposible', 'El Ilusionista', 'Cinema Paradiso', 'Pulp Fiction',
+          'Ratatouille', 'La Vida es Bella', 'El Viaje de Chihiro', 'Forrest Gump', 'Kung Fu Panda',
+          'Casablanca', 'Up: Aventura de Altura', 'El Caballero de la Noche', 'Matrix Reloaded', 'El Laberinto del Fauno',
+          'El Resplandor', 'Psicosis', 'Alien: El Octavo Pasajero', 'Blade Runner', 'Parásitos',
+          'Rocky', 'Top Gun', 'Braveheart', 'El Gran Showman', 'El Quinto Elemento',
+          'El Lobo de Wall Street', 'Django sin Cadenas', 'La Naranja Mecánica', 'Whiplash', 'El Club de la Pelea',
+          'Gran Hotel Budapest', 'La Princesa Prometida', 'Tarzán', 'Hércules', 'La Bella y la Bestia',
+          'Mi Vecino Totoro', 'Zootopia', 'Los Ilusionistas', 'El Náufrago', 'El Curioso Caso de Benjamin Button'
         ]
       }
     };
 
-    // Palabras pista asignadas al impostor para cada palabra secreta en Modo Normal
+    // Palabras pista asignadas al impostor para cada palabra secreta en Modo Normal (600 oficiales)
     const WORD_HINTS = {
-      // Comida y Bebida
+      // Comida y Bebida (86)
       'Pizza': 'Masa',
       'Sushi': 'Arroz',
       'Hamburguesa': 'Pan',
@@ -1795,8 +2295,74 @@
       'Ceviche': 'Limón',
       'Panqueque': 'Sartén',
       'Queso': 'Lácteo',
+      'Burrito': 'Frijoles',
+      'Lasaña': 'Capas',
+      'Hot Dog': 'Salchicha',
+      'Ramen': 'Fideos',
+      'Donas': 'Glaseado',
+      'Nachos': 'Queso fundido',
+      'Falafel': 'Garbanzos',
+      'Crepa': 'Nutella',
+      'Brownie': 'Nuez',
+      'Sandwich': 'Miga',
+      'Waffle': 'Miel',
+      'Tamal': 'Hoja',
+      'Risotto': 'Cremoso',
+      'Bagel': 'Semillas',
+      'Tortilla española': 'Patatas',
+      'Yogur': 'Fermento',
+      'Flan': 'Caramelo',
+      'Té verde': 'Infusión',
+      'Vino tinto': 'Uvas',
+      'Cerveza': 'Espuma',
+      'Cereal': 'Leche',
+      'Tarta de manzana': 'Canela',
+      'Palomitas de maíz': 'Cine',
+      'Muffin': 'Horno',
+      'Gazpacho': 'Tomate',
+      'Tiramisú': 'Café',
+      'Canelones': 'Bechamel',
+      'Hummus': 'Garbanzos',
+      'Fondue de queso': 'Fundido',
+      'Guiso de lentejas': 'Cuchara',
+      'Salmorejo': 'Tomate',
+      'Cheesecake': 'Queso',
+      'Empanadilla de atún': 'Relleno',
+      'Crema de calabaza': 'Sopa',
+      'Churrasco': 'Brasas',
+      'Pollo frito': 'Crujiente',
+      'Crema catalana': 'Caramelo',
+      'Carpaccio': 'Láminas',
+      'Smoothie de frutas': 'Licuadora',
+      'Tarta de queso': 'Horno',
+      'Albóndigas': 'Salsa',
+      'Croquetas': 'Bechamel',
+      'Limonada': 'Cítrico',
+      'Margarita': 'Cóctel',
+      'Mojito': 'Menta',
+      'Totopos con queso': 'Maíz crujiente',
+      'Perrito caliente': 'Mostaza',
+      'Milanesa': 'Empanado',
+      'Gnocchi': 'Papa',
+      'Cuscús': 'Sémola',
+      'Tofu': 'Soja',
+      'Macedonia de frutas': 'Postre',
+      'Panna cotta': 'Gelatina',
+      'Nuggets de pollo': 'Rebozado',
+      'Quesadilla': 'Tortilla',
+      'Fajitas': 'Pimientos',
+      'Pintxo': 'Palillo',
+      'Natillas': 'Canela',
+      'Sidra': 'Manzana',
+      'Sangría': 'Fruta',
+      'Macarons': 'Almendra',
+      'Polenta': 'Maíz',
+      'Calamares a la romana': 'Fritura',
+      'Costillas a la barbacoa': 'Adobo',
+      'Tartar de salmón': 'Crudo',
+      'Profiteroles': 'Nata',
 
-      // Lugares del Mundo
+      // Lugares del Mundo (86)
       'Hospital': 'Médicos',
       'Playa': 'Arena',
       'Aeropuerto': 'Aviones',
@@ -1815,110 +2381,870 @@
       'Estadio': 'Gradas',
       'Castillo': 'Fortaleza',
       'Iglesia': 'Campanario',
+      'Estación espacial': 'Gravedad',
+      'Pirámides de Egipto': 'Faraón',
+      'Gran Cañón': 'Garganta',
+      'Torre Eiffel': 'París',
+      'Selva amazónica': 'Vegetación',
+      'Desierto del Sahara': 'Dunas',
+      'Volcán': 'Lava',
+      'Cueva subterránea': 'Estalactitas',
+      'Casino': 'Ruleta',
+      'Banco': 'Bóveda',
+      'Prisión': 'Celdas',
+      'Barco pirata': 'Bandera negra',
+      'Granja': 'Cultivos',
+      'Planetario': 'Constelaciones',
+      'Faro marítimo': 'Costas',
+      'Centro comercial': 'Tiendas',
+      'Parque nacional': 'Senderos',
+      'Teatro de ópera': 'Palcos',
+      'Estación de esquí': 'Nieve',
+      'Laboratorio secreto': 'Experimentos',
+      'Spa de relajación': 'Masajes',
+      'Cementerio': 'Lápidas',
+      'Estación de policía': 'Patrullas',
+      'Parque acuático': 'Toboganes',
+      'Fábrica abandonada': 'Maquinaria',
+      'Isla desierta': 'Palmeras',
+      'Observatorio astronómico': 'Cúpula',
+      'Machu Picchu': 'Ruinas andinas',
+      'Coliseo romano': 'Gladiadores',
+      'Muralla China': 'Fortificación',
+      'Taj Mahal': 'Mausoleo',
+      'Cataratas del Niágara': 'Cascada',
+      'Torre de Pisa': 'Inclinada',
+      'Acuario marino': 'Pecera gigante',
+      'Isla de Pascua': 'Moáis',
+      'Mercado flotante': 'Canoas',
+      'Templo budista': 'Incienso',
+      'Refugio de montaña': 'Leña',
+      'Oasis del desierto': 'Palmeras',
+      'Trinchera submarina': 'Abismo',
+      'Estación de metro': 'Andén',
+      'Búnker subterráneo': 'Blindaje',
+      'Panteón de París': 'Cúpula',
+      'Stonehenge': 'Megalitos',
+      'Canales de Venecia': 'Góndolas',
+      'Monte Everest': 'Cima',
+      'Catedral de Notre Dame': 'Gárgolas',
+      'Acrópolis de Atenas': 'Columnas',
+      'Times Square': 'Pantallas',
+      'Central Park': 'Árboles',
+      'Big Ben': 'Campana',
+      'Palacio de Versalles': 'Jardines',
+      'Disneyland': 'Castillo',
+      'Chichén Itzá': 'Pirámide',
+      'Cristo Redentor': 'Mirador',
+      'Isla de Santorini': 'Casas blancas',
+      'Fiordos noruegos': 'Glaciar',
+      'Plaza Roja de Moscú': 'Cúpulas',
+      'Puerta de Brandeburgo': 'Monumento',
+      'Cueva de cristales': 'Minerales',
+      'Mina de carbón': 'Túneles',
+      'Estación de bomberos': 'Sirena',
+      'Campamento en el bosque': 'Fogata',
+      'Plataforma petrolera': 'Alta mar',
+      'Autódromo de carreras': 'Pista',
+      'Puerto marítimo': 'Contenedores',
+      'Jardín botánico': 'Invernadero',
+      'Bulevar de Hollywood': 'Estrellas',
 
-      // Reino Animal
+      // Reino Animal (86)
       'León': 'Melena',
-      'Delfín': 'Aletas',
+      'Delfín': 'Ecolocación',
       'Pingüino': 'Antártida',
       'Elefante': 'Trompa',
       'Camaleón': 'Camuflaje',
-      'Canguro': 'Saltos',
-      'Águila': 'Plumas',
+      'Canguro': 'Bolsa',
+      'Águila': 'Garras',
       'Perro': 'Ladrido',
       'Gato': 'Bigotes',
-      'Tiburón': 'Mandíbula',
+      'Tiburón': 'Aleta',
       'Jirafa': 'Cuello',
       'Pulpo': 'Tentáculos',
-      'Oso polar': 'Nieve',
-      'Murciélago': 'Cueva',
+      'Oso polar': 'Hielo',
+      'Murciélago': 'Nocturno',
       'Caballo': 'Herradura',
       'Koala': 'Eucalipto',
-      'Cocodrilo': 'Pantano',
+      'Cocodrilo': 'Mandíbula',
       'Flamenco': 'Rosa',
       'Lobo': 'Aullido',
       'Tortuga': 'Caparazón',
+      'Tigre': 'Rayas',
+      'Chimpancé': 'Selva',
+      'Perezoso': 'Lento',
+      'Búho': 'Nocturno',
+      'Medusa': 'Tentáculos',
+      'Oso panda': 'Bambú',
+      'Rinoceronte': 'Cuerno',
+      'Hipopótamo': 'Río',
+      'Cebra': 'Rayas',
+      'Zorro': 'Cola esponjosa',
+      'Castor': 'Dique',
+      'Escorpión': 'Aguijón',
+      'Camello': 'Jorobas',
+      'Erizo': 'Púas',
+      'Halcón': 'Caza',
+      'Guacamayo': 'Plumas de colores',
+      'Rana dardo': 'Veneno',
+      'Ornitorrinco': 'Pico de pato',
+      'Hiena': 'Risa',
+      'Mantarraya': 'Alas marinas',
+      'Ardilla': 'Bellotas',
+      'Nutria': 'Río',
+      'Gorila': 'Espalda plateada',
+      'Ballena azul': 'Océano',
+      'Tejón': 'Madriguera',
+      'Jaguar': 'Manchas',
+      'Lémur': 'Cola anillada',
+      'Suricata': 'Vigía',
+      'Mantis religiosa': 'Rezo',
+      'Pez payaso': 'Anémona',
+      'Pez espada': 'Pico largo',
+      'Pez globo': 'Espinas',
+      'Búfalo': 'Manada',
+      'Tucán': 'Pico grande',
+      'Cacatúa': 'Cresta',
+      'Panda rojo': 'Cola rojiza',
+      'Foca': 'Aletas',
+      'Capibara': 'Roedor gigante',
+      'Lobo marino': 'Costas',
+      'Camaleón pantera': 'Colores vivos',
+      'Guepardo': 'Velocidad',
+      'Cobra real': 'Veneno',
+      'Pelícano': 'Pico',
+      'Morsa': 'Colmillos',
+      'Oso pardo': 'Bosque',
+      'Ciervo': 'Cornamenta',
+      'Avestruz': 'Corredor',
+      'Cisne': 'Laguna',
+      'Pavo real': 'Plumas',
+      'Calamar gigante': 'Tentáculos',
+      'Pantera negra': 'Selva',
+      'Hámster': 'Rueda',
+      'Hurón': 'Madriguera',
+      'Alce': 'Cuernos',
+      'Armadillo': 'Caparazón',
+      'Antílope': 'Sabana',
+      'Piraña': 'Dientes',
+      'Ajolote': 'Regeneración',
+      'Wómbat': 'Marsupial',
+      'Salamandra': 'Anfibio',
+      'Pez león': 'Espinas',
+      'Narval': 'Colmillo',
+      'Orca': 'Depredador',
+      'Coyote': 'Aullido',
+      'Lucérnaga': 'Luz',
+      'Colibrí': 'Néctar',
 
-      // Objetos Cotidianos
+      // Objetos Cotidianos (86)
       'Teléfono celular': 'Pantalla',
-      'Reloj de pulsera': 'Hora',
+      'Reloj de pulsera': 'Manecillas',
       'Paraguas': 'Lluvia',
       'Llaves': 'Cerradura',
       'Guitarra': 'Cuerdas',
       'Espejo': 'Reflejo',
-      'Lámpara': 'Bombilla',
+      'Lámpara': 'Luz',
       'Mochila': 'Cierres',
       'Cámara fotográfica': 'Lente',
       'Zapatos': 'Suela',
       'Auriculares': 'Música',
       'Billetera': 'Billetes',
       'Bicicleta': 'Pedales',
-      'Gafas de sol': 'Lentes',
-      'Tenedor': 'Cubierto',
-      'Almohada': 'Dormir',
-      'Tijeras': 'Filo',
+      'Gafas de sol': 'Lentes oscuros',
+      'Tenedor': 'Dientes',
+      'Almohada': 'Plumas',
+      'Tijeras': 'Corte',
+      'Brújula': 'Norte',
+      'Linterna': 'Haz de luz',
+      'Monopatín': 'Ruedas',
+      'Cepillo de dientes': 'Cerdas',
+      'Microondas': 'Calentar',
+      'Plancha de ropa': 'Vapor',
+      'Sartén antiadherente': 'Cocina',
+      'Maleta de viaje': 'Ruedas',
+      'Ventilador': 'Aspas',
+      'Termo de café': 'Calor',
+      'Destornillador': 'Tornillo',
+      'Candado': 'Llave',
+      'Prismáticos': 'Alcance',
+      'Casco de seguridad': 'Protección',
+      'Drone': 'Hélices',
+      'Teclado mecánico': 'Teclas',
+      'Botella de agua': 'Hidratación',
+      'Vela aromática': 'Cera',
+      'Esponja de baño': 'Espuma',
+      'Cuchillo de chef': 'Filo',
+      'Aspiradora': 'Succión',
+      'Calculadora': 'Números',
+      'Cinta adhesiva': 'Pegamento',
+      'Mando a distancia': 'Botones',
+      'Abrelatas': 'Lata',
+      'Lupa de aumento': 'Aumento',
+      'Termómetro': 'Temperatura',
+      'Reloj de arena': 'Granos',
+      'Sacacorchos': 'Corcho',
+      'Regla graduada': 'Centímetros',
+      'Perchero': 'Abrigos',
+      'Linterna frontal': 'Frente',
+      'Abrebotellas': 'Chapa',
+      'Maletín ejecutivo': 'Documentos',
+      'Despertador': 'Alarma',
+      'Exprimidor de cítricos': 'Zumo',
+      'Cinta métrica': 'Metros',
+      'Gramófono': 'Disco de vinilo',
+      'Rallador de queso': 'Cuchillas',
+      'Lámpara de lava': 'Burbujas',
+      'Grapadora': 'Grapas',
+      'Secador de pelo': 'Aire caliente',
+      'Altavoz bluetooth': 'Sonido inalámbrico',
+      'Martillo': 'Clavos',
+      'Taladro eléctrico': 'Broca',
+      'Taza térmica': 'Bebida',
+      'Cargador de móvil': 'Batería',
+      'Libreta de notas': 'Apuntes',
+      'Bolígrafo': 'Tinta',
+      'Telescopio': 'Estrellas',
+      'Cafetera express': 'Espresso',
+      'Tostadora de pan': 'Desayuno',
+      'Licuadora': 'Cuchillas',
+      'Batidora de mano': 'Mezcla',
+      'Altavoz inteligente': 'Voz',
+      'Cámara de video': 'Grabación',
+      'Monóculo': 'Ojo',
+      'Caja fuerte': 'Combinación',
+      'Patinete eléctrico': 'Batería',
+      'Silla de oficina': 'Ruedas',
+      'Impermeable': 'Lluvia',
+      'Almohadilla de ratón': 'Escritorio',
+      'Colchón inflable': 'Camping',
+      'Ukelele': 'Cuerdas',
+      'Piano de cola': 'Teclas',
+      'Microscopio': 'Lentes',
+      'Walkie-talkie': 'Frecuencia',
+      'Powerbank': 'Recarga',
+      'Pendrive USB': 'Archivos',
 
-      // Profesiones y Oficios
+      // Profesiones y Oficios (86)
       'Médico': 'Estetoscopio',
-      'Astronauta': 'Espacio',
-      'Bombero': 'Fuego',
-      'Detective': 'Lupa',
-      'Chef': 'Cocina',
-      'Piloto': 'Cabina',
+      'Astronauta': 'Traje espacial',
+      'Bombero': 'Manguera',
+      'Detective': 'Pistas',
+      'Chef': 'Gorro blanco',
+      'Piloto': 'Cabina de vuelo',
       'Pintor': 'Pincel',
       'Abogado': 'Leyes',
       'Profesor': 'Pizarra',
-      'Músico': 'Notas',
+      'Músico': 'Instrumento',
       'Arquitecto': 'Planos',
-      'Fotógrafo': 'Flash',
-      'Científico': 'Laboratorio',
-      'Jardinero': 'Plantas',
-      'Carpintero': 'Madera',
+      'Fotógrafo': 'Cámara',
+      'Científico': 'Matraz',
+      'Jardinero': 'Tijeras de podar',
+      'Carpintero': 'Serrucho',
       'Bailarín': 'Coreografía',
-      'Periodista': 'Noticias',
+      'Periodista': 'Micrófono',
       'Veterinario': 'Mascotas',
+      'Arqueólogo': 'Fósiles',
+      'Buzo profesional': 'Tanque de oxígeno',
+      'Electricista': 'Cables',
+      'Juez': 'Mazo',
+      'Cirujano': 'Bisturí',
+      'Fontanero': 'Tuberías',
+      'Minero': 'Casco con luz',
+      'Cerrajero': 'Ganzúas',
+      'Cartero': 'Cartas',
+      'Guía turístico': 'Recorrido',
+      'Meteorólogo': 'Pronóstico del clima',
+      'Paramédico': 'Ambulancia',
+      'Joyero': 'Gemas',
+      'Albañil': 'Ladrillos',
+      'Apicultor': 'Colmena',
+      'Pescador': 'Red marina',
+      'Conductor de autobús': 'Volante',
+      'Diseñador gráfico': 'Tableta digital',
+      'Panadero': 'Horno de pan',
+      'Escultor': 'Cincel',
+      'Sommelier': 'Cata de vinos',
+      'Guardaespaldas': 'Seguridad',
+      'Astronauta mecánico': 'Ingeniería espacial',
+      'Traductor': 'Idiomas',
+      'Guionista': 'Diálogos',
+      'Barista': 'Café latte',
+      'Farmacéutico': 'Medicamentos',
+      'Astrónomo': 'Telescopio',
+      'Geólogo': 'Rocas',
+      'Paleontólogo': 'Dinosaurios',
+      'Oceanógrafo': 'Arrecifes',
+      'Piloto de drones': 'Control remoto',
+      'Ilusionista / Mago': 'Chistera',
+      'Ebanista': 'Muebles de madera',
+      'Escenógrafo': 'Decorados',
+      'Podólogo': 'Pies',
+      'Herrero': 'Yunque',
+      'Croupier de casino': 'Cartas y fichas',
+      'Cartógrafo': 'Mapas',
+      'Lutier': 'Violines',
+      'Taxidermista': 'Disecar',
+      'Ceramista': 'Torno de alfarero',
+      'Diplomático': 'Embajada',
+      'Psicólogo': 'Terapia',
+      'Enfermero': 'Cuidados',
+      'Biólogo marino': 'Arrecife',
+      'Bibliotecario': 'Estanterías',
+      'Peluquero': 'Tijeras',
+      'Sastre': 'Costura',
+      'Florista': 'Ramos',
+      'Entrenador personal': 'Rutina',
+      'Director de orquesta': 'Batuta',
+      'Actor de doblaje': 'Micrófono',
+      'Especialista de cine': 'Acción',
+      'Azafata de vuelo': 'Pasajeros',
+      'Capitán de barco': 'Timón',
+      'Mecánico de aviación': 'Turbinas',
+      'Optometrista': 'Graduación',
+      'Dentista': 'Dientes',
+      'Fisioterapeuta': 'Masaje',
+      'Ingeniero de sonido': 'Consola',
+      'Programador informático': 'Código',
+      'Guardián forestal': 'Parque',
+      'Antropólogo': 'Civilización',
+      'Historiador': 'Documentos',
+      'Cocinero de sushi': 'Cuchillo',
+      'Perito judicial': 'Informe',
+      'Acróbata de circo': 'Trapecio',
 
-      // Deportes y Juegos
-      'Fútbol': 'Balón',
+      // Deportes y Juegos (85)
+      'Fútbol': 'Balón redondo',
       'Baloncesto': 'Canasta',
       'Tenis': 'Raqueta',
       'Natación': 'Piscina',
       'Boxeo': 'Guantes',
-      'Voleibol': 'Red',
-      'Ciclismo': 'Ruedas',
+      'Voleibol': 'Red alta',
+      'Ciclismo': 'Bicicleta',
       'Esquí': 'Nieve',
       'Surf': 'Olas',
       'Béisbol': 'Bate',
-      'Atletismo': 'Carrera',
-      'Patinaje': 'Pista',
-      'Golf': 'Palo',
-      'Ajedrez': 'Tablero',
-      'Rugby': 'Melé',
+      'Atletismo': 'Pista de carreras',
+      'Patinaje': 'Ruedas',
+      'Golf': 'Hoyo',
+      'Ajedrez': 'Tablero de escaques',
+      'Rugby': 'Balón ovalado',
+      'Escalada': 'Arnés',
+      'Tiro con arco': 'Diana',
+      'Esgrima': 'Florete',
+      'Karate': 'Cinturón negro',
+      'Paracaidismo': 'Caída libre',
+      'Bádminton': 'Volante',
+      'Polo acuático': 'Gorro de agua',
+      'Remo': 'Pala',
+      'Motociclismo': 'Circuito de motos',
+      'Snowboard': 'Tabla de nieve',
+      'Hockey sobre hielo': 'Disco (Puck)',
+      'Halterofilia': 'Barras con pesas',
+      'Ping pong': 'Paleta pequeña',
+      'Gimnasia rítmica': 'Cinta de baile',
+      'Bolos': 'Pinos',
+      'Dardos': 'Diana circular',
+      'Rally': 'Tierra y curvas',
+      'Rafting': 'Rápidos del río',
+      'Buceo libre': 'Apnea',
+      'Yoga': 'Esterilla',
+      'Parkour': 'Obstáculos urbanos',
+      'Triatlón': 'Tres pruebas',
+      'Curling': 'Piedra de granito',
+      'Vela náutica': 'Viento',
+      'Billar': 'Taco de madera',
+      'Patinaje sobre hielo': 'Cuchillas',
+      'Lucha libre': 'Máscara',
+      'Espeleología': 'Grutas',
+      'Skateboard': 'Tabla y trucos',
+      'Kitesurf': 'Cometa',
+      'Paintball': 'Bolas de pintura',
+      'Tiro con rifle': 'Puntería',
+      'Carreras de karts': 'Minicoches',
+      'Parapente': 'Vuelo térmico',
+      'Lanzamiento de jabalina': 'Lanza',
+      'Ultimate Frisbee': 'Disco volador',
+      'Bobsleigh': 'Trineo veloz',
+      'Salto con pértiga': 'Pértiga flexible',
+      'Vela oceánica': 'Altamar',
+      'Muay Thai': 'Ocho extremidades',
+      'Waterpolo': 'Balón acuático',
+      'Judo': 'Tatami',
+      'Taekwondo': 'Patada alta',
+      'Motocross': 'Saltos de barro',
+      'Windsurf': 'Tabla con vela',
+      'Pádel': 'Pala',
+      'Squash': 'Pared',
+      'Handball': 'Portería',
+      'Críquet': 'Bate plano',
+      'Sóftbol': 'Lanzador',
+      'Lanzamiento de disco': 'Fuerza',
+      'Salto de longitud': 'Arena',
+      'Maratón': 'Kilómetros',
+      'Carrera de obstáculos': 'Barro',
+      'Hockey sobre patines': 'Pista',
+      'Hockey sobre hierba': 'Stick',
+      'Gimnasia artística': 'Anillas',
+      'Alpinismo': 'Cumbre',
+      'Pesca deportiva': 'Caña',
+      'Submarinismo': 'Botella',
+      'Frontenis': 'Raqueta',
+      'Vóley playa': 'Arena',
+      'Póker': 'Cartas',
+      'Dominó': 'Fichas',
+      'Futbolín': 'Muñecos',
+      'Carrera de caballos': 'Hipódromo',
+      'Tiro al plato': 'Escopeta',
+      'Wakeboard': 'Lancha',
+      'Piragüismo': 'Pala',
+      'Esquí acuático': 'Cuerda y lancha',
 
-      // Películas y Famosos
-      'Harry Potter': 'Magia',
-      'Star Wars': 'Galaxia',
-      'Titanic': 'Barco',
-      'El Padrino': 'Mafia',
-      'Parque Jurásico': 'Dinosaurios',
-      'Spider-Man': 'Telaraña',
-      'El Señor de los Anillos': 'Anillo',
-      'Matrix': 'Pastilla',
-      'Avatar': 'Azul',
-      'Shrek': 'Ogro',
-      'Batman': 'Gotham',
-      'Piratas del Caribe': 'Brújula',
-      'Toy Story': 'Juguetes',
-      'Gladiador': 'Coliseo'
+      // Películas y Famosos (85)
+      'Harry Potter': 'Varita mágica',
+      'Star Wars': 'Sable de luz',
+      'Titanic': 'Iceberg',
+      'El Padrino': 'Oferta irrechazable',
+      'Parque Jurásico': 'Ámbar',
+      'Spider-Man': 'Telarañas',
+      'El Señor de los Anillos': 'Anillo único',
+      'Matrix': 'Píldora roja',
+      'Avatar': 'Pandora',
+      'Shrek': 'Pantano',
+      'Batman': 'Baticueva',
+      'Piratas del Caribe': 'Brújula mágica',
+      'Toy Story': 'Juguetes vivos',
+      'Gladiador': 'Arena romana',
+      'Los Vengadores': 'Gemas del infinito',
+      'Indiana Jones': 'Látigo',
+      'Interestelar': 'Agujero negro',
+      'Stranger Things': 'Mundo del revés',
+      'Breaking Bad': 'Química',
+      'Juego de Tronos': 'Trono de hierro',
+      'Los Simpson': 'Familia amarilla',
+      'Volver al Futuro': 'DeLorean',
+      'El Rey León': 'Roca del rey',
+      'Terminator': 'Cíborg del futuro',
+      'Sherlock Holmes': 'Lupa y pipa',
+      'Mi Pobre Angelito': 'Trampas caseras',
+      'Cazafantasmas': 'Mochila de protones',
+      'Men in Black': 'Neutralizador',
+      'Coco': 'Guitarra',
+      'Buscando a Nemo': 'Océano',
+      'Los Juegos del Hambre': 'Sinsajo',
+      'Los Increíbles': 'Superhéroes',
+      'Willy Wonka': 'Fábrica',
+      'Pesadilla antes de Navidad': 'Calabaza',
+      'El Origen (Inception)': 'Sueños',
+      'Alicia en el País de las Maravillas': 'Conejo',
+      'Aladdín': 'Lámpara',
+      'Mulan': 'Espada',
+      'Karate Kid': 'Grulla',
+      'Wall-E': 'Basura',
+      'Monstruos S.A.': 'Puertas',
+      'La La Land': 'Baile',
+      'El Show de Truman': 'Televisión',
+      'Mad Max': 'Motores',
+      'Scooby-Doo': 'Furgoneta',
+      'Jurassic World': 'Parque',
+      'Misión Imposible': 'Agente',
+      'El Ilusionista': 'Magia',
+      'Cinema Paradiso': 'Proyector',
+      'Pulp Fiction': 'Maletín',
+      'Ratatouille': 'Cocina',
+      'La Vida es Bella': 'Juego',
+      'El Viaje de Chihiro': 'Espíritus',
+      'Forrest Gump': 'Chocolates',
+      'Kung Fu Panda': 'Fideos',
+      'Casablanca': 'Aeropuerto',
+      'Up: Aventura de Altura': 'Globos',
+      'El Caballero de la Noche': 'Guasón',
+      'Matrix Reloaded': 'Cabina',
+      'El Laberinto del Fauno': 'Hadas',
+      'El Resplandor': 'Hotel',
+      'Psicosis': 'Ducha',
+      'Alien: El Octavo Pasajero': 'Nave espacial',
+      'Blade Runner': 'Androides',
+      'Parásitos': 'Sótano',
+      'Rocky': 'Ring',
+      'Top Gun': 'Avión de combate',
+      'Braveheart': 'Libertad',
+      'El Gran Showman': 'Circo',
+      'El Quinto Elemento': 'Futuro',
+      'El Lobo de Wall Street': 'Bolsa',
+      'Django sin Cadenas': 'Oeste',
+      'La Naranja Mecánica': 'Sombrero',
+      'Whiplash': 'Batería musical',
+      'El Club de la Pelea': 'Reglas',
+      'Gran Hotel Budapest': 'Conserje',
+      'La Princesa Prometida': 'Espadachín',
+      'Tarzán': 'Lianas',
+      'Hércules': 'Olimpo',
+      'La Bella y la Bestia': 'Rosa mágica',
+      'Mi Vecino Totoro': 'Bosque',
+      'Zootopia': 'Metrópoli',
+      'Los Ilusionistas': 'Magia',
+      'El Náufrago': 'Pelota',
     };
+
+    // -------------------------------------------------------------
+    // Haptic Feedback Engine & Accessibility Live Announcer
+    // -------------------------------------------------------------
+    function triggerHaptic(pattern = 15) {
+      try {
+        if ('vibrate' in navigator && typeof navigator.vibrate === 'function') {
+          navigator.vibrate(pattern);
+        }
+      } catch (e) {}
+    }
+
+    function announceA11y(message) {
+      const live = document.getElementById('a11yLiveAnnouncer');
+      if (live) {
+        live.textContent = message;
+      }
+    }
+
+    // -------------------------------------------------------------
+    // Sistema de Banco de Memoria Ilimitada & Baraja Sin Repetición
+    // -------------------------------------------------------------
+    const DECK_STORAGE_KEY = 'el_impostor_used_words_v2';
+    const CUSTOM_WORDS_STORAGE_KEY = 'el_impostor_custom_words_v2';
+    const STRICT_MEMORY_KEY = 'el_impostor_strict_infinite_memory_v2';
+
+    // Obtener configuración de memoria ilimitada estricta (por defecto: activada para garantía de nunca repetir)
+    function isStrictInfiniteMemory() {
+      try {
+        const val = localStorage.getItem(STRICT_MEMORY_KEY);
+        return val === null ? true : val === 'true';
+      } catch (e) {
+        return true;
+      }
+    }
+
+    function setStrictInfiniteMemory(enabled) {
+      try {
+        localStorage.setItem(STRICT_MEMORY_KEY, enabled ? 'true' : 'false');
+      } catch (e) {}
+      updateDeckStatsUI();
+      renderDeckManagerUI();
+    }
+
+    // Palabras personalizadas añadidas por el usuario
+    function getCustomWords() {
+      try {
+        const raw = localStorage.getItem(CUSTOM_WORDS_STORAGE_KEY);
+        return raw ? JSON.parse(raw) : {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function saveCustomWords(data) {
+      try {
+        localStorage.setItem(CUSTOM_WORDS_STORAGE_KEY, JSON.stringify(data));
+      } catch (e) {}
+    }
+
+    function addCustomWordToDeck(catKey, word, hint) {
+      const cleanWord = (word || '').trim();
+      const cleanHint = (hint || '').trim();
+      if (!cleanWord || !CATEGORIES[catKey]) return { success: false, msg: 'Introduce una palabra válida.' };
+
+      const custom = getCustomWords();
+      if (!custom[catKey]) custom[catKey] = [];
+
+      // Verificar si ya existe en oficiales o personalizadas
+      const allWords = getAllCategoryWords(catKey);
+      if (allWords.some(w => w.toLowerCase() === cleanWord.toLowerCase())) {
+        return { success: false, msg: 'Esa palabra ya existe en esta categoría.' };
+      }
+
+      custom[catKey].push({
+        word: cleanWord,
+        hint: cleanHint || 'Relacionado',
+        createdAt: Date.now()
+      });
+
+      saveCustomWords(custom);
+      updateDeckStatsUI();
+      renderDeckManagerUI();
+      return { success: true };
+    }
+
+    function deleteCustomWord(catKey, wordToDelete) {
+      const custom = getCustomWords();
+      if (!custom[catKey]) return;
+      custom[catKey] = custom[catKey].filter(item => item.word.toLowerCase() !== wordToDelete.toLowerCase());
+      saveCustomWords(custom);
+      updateDeckStatsUI();
+      renderDeckManagerUI();
+      showToast(`Palabra "${wordToDelete}" eliminada de la baraja.`);
+    }
+
+    // Retorna todas las palabras de una categoría (60 oficiales + personalizadas)
+    function getAllCategoryWords(catKey) {
+      if (!CATEGORIES[catKey]) return [];
+      const official = CATEGORIES[catKey].palabras || [];
+      const custom = (getCustomWords()[catKey] || []).map(item => item.word);
+      return [...official, ...custom];
+    }
+
+    // Historial de palabras usadas
+    function getUsedWordsDeck() {
+      try {
+        const raw = localStorage.getItem(DECK_STORAGE_KEY);
+        return raw ? JSON.parse(raw) : {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function saveUsedWordsDeck(deck) {
+      try {
+        localStorage.setItem(DECK_STORAGE_KEY, JSON.stringify(deck));
+      } catch (e) {}
+    }
+
+    function resetUsedWordsDeck(catKey) {
+      const deck = getUsedWordsDeck();
+      if (!catKey || catKey === 'all' || catKey === 'aleatorio') {
+        Object.keys(CATEGORIES).forEach(k => {
+          delete deck[k];
+        });
+        showToast('Memoria completa de todas las categorías reiniciada.');
+      } else {
+        delete deck[catKey];
+        const catName = CATEGORIES[catKey] ? CATEGORIES[catKey].nombre : catKey;
+        showToast(`Memoria de "${catName}" reiniciada.`);
+      }
+      saveUsedWordsDeck(deck);
+      updateDeckStatsUI();
+      renderDeckManagerUI();
+      sound.playSuccess();
+    }
+
+    // Palabras disponibles (sin jugar) en una categoría
+    function getCategoryAvailableWords(catKey) {
+      if (!CATEGORIES[catKey]) return [];
+      const allWords = getAllCategoryWords(catKey);
+      const deck = getUsedWordsDeck();
+      const used = deck[catKey] || [];
+      return allWords.filter(w => !used.includes(w));
+    }
+
+    // Selección de palabra garantizando cero repetición
+    function pickWordWithoutRepetition(catKey) {
+      const deck = getUsedWordsDeck();
+      if (!deck[catKey]) deck[catKey] = [];
+
+      const allWords = getAllCategoryWords(catKey);
+      let available = allWords.filter(w => !deck[catKey].includes(w));
+      let wasRecycled = false;
+
+      // Si se agotaron todas las palabras de esta categoría:
+      if (available.length === 0) {
+        const strict = isStrictInfiniteMemory();
+        if (strict) {
+          // En modo estricto, avisamos que la memoria de esta categoría está llena
+          return {
+            exhausted: true,
+            catKey: catKey,
+            categoryName: CATEGORIES[catKey].nombre,
+            total: allWords.length
+          };
+        } else {
+          // Si no está en modo estricto, reciclamos automáticamente
+          deck[catKey] = [];
+          available = [...allWords];
+          wasRecycled = true;
+        }
+      }
+
+      // Escoger una al azar entre las que NUNCA se han jugado
+      const chosenWord = available[Math.floor(Math.random() * available.length)];
+      deck[catKey].push(chosenWord);
+      saveUsedWordsDeck(deck);
+
+      return {
+        exhausted: false,
+        word: chosenWord,
+        wasRecycled: wasRecycled,
+        remaining: available.length - 1,
+        total: allWords.length
+      };
+    }
 
     function getHintForWord(word, fallbackHint) {
       if (fallbackHint && fallbackHint.trim()) return fallbackHint.trim();
       if (WORD_HINTS[word]) return WORD_HINTS[word];
+
+      // Buscar en palabras personalizadas
+      const custom = getCustomWords();
+      for (const catKey of Object.keys(custom)) {
+        const match = custom[catKey].find(item => item.word.toLowerCase() === (word || '').toLowerCase());
+        if (match && match.hint) return match.hint;
+      }
+
       const lower = (word || '').trim().toLowerCase();
       for (const [key, val] of Object.entries(WORD_HINTS)) {
         if (key.toLowerCase() === lower) return val;
       }
       return 'Relacionado';
+    }
+
+    function updateDeckStatsUI() {
+      if (!el.txtDeckStats || !el.deckStatusCard) return;
+      const catVal = el.selectCategory ? el.selectCategory.value : 'aleatorio';
+
+      if (catVal === 'personalizado') {
+        el.deckStatusCard.classList.add('hidden');
+        return;
+      }
+      el.deckStatusCard.classList.remove('hidden');
+
+      if (catVal === 'aleatorio') {
+        let totalWords = 0;
+        let totalAvailable = 0;
+        Object.keys(CATEGORIES).forEach(k => {
+          totalWords += getAllCategoryWords(k).length;
+          totalAvailable += getCategoryAvailableWords(k).length;
+        });
+        el.txtDeckStats.textContent = `${totalAvailable}/${totalWords} palabras vírgenes disponibles`;
+      } else if (CATEGORIES[catVal]) {
+        const total = getAllCategoryWords(catVal).length;
+        const available = getCategoryAvailableWords(catVal).length;
+        el.txtDeckStats.textContent = `${available}/${total} palabras disponibles en esta categoría`;
+      }
+    }
+
+    let toastTimeout = null;
+    function showToast(message) {
+      let toastEl = document.getElementById('appToast');
+      if (!toastEl) {
+        toastEl = document.createElement('div');
+        toastEl.id = 'appToast';
+        toastEl.className = 'fixed bottom-5 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-xl bg-slate-900/95 text-emerald-300 border border-emerald-500/40 shadow-xl backdrop-blur-md text-xs sm:text-sm font-semibold flex items-center gap-2 transition-all duration-300 opacity-0 pointer-events-none transform translate-y-2';
+        document.body.appendChild(toastEl);
+      }
+      toastEl.innerHTML = `<span>🧠</span><span>${message}</span>`;
+      toastEl.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+      toastEl.classList.add('opacity-100', 'translate-y-0');
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toastEl.classList.remove('opacity-100', 'translate-y-0');
+        toastEl.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+      }, 3200);
+    }
+
+    // Renderizar contenidos del Modal del Gestor de Baraja y Memoria Ilimitada
+    function renderDeckManagerUI() {
+      const modal = document.getElementById('modalDeckManager');
+      if (!modal) return;
+
+      const statOfficial = document.getElementById('statOfficialWords');
+      const statCustom = document.getElementById('statCustomWords');
+      const statPlayed = document.getElementById('statPlayedWords');
+      const statAvailable = document.getElementById('statAvailableWords');
+      const chkStrict = document.getElementById('chkStrictInfiniteMemory');
+      const chipsList = document.getElementById('deckWordsChipsList');
+      const txtFilteredCount = document.getElementById('txtManagerFilteredCount');
+      const filterCat = document.getElementById('selectManagerFilterCategory');
+      const searchInput = document.getElementById('inputSearchDeckWord');
+
+      let totalOfficial = 0;
+      let totalCustom = 0;
+      let totalPlayed = 0;
+      let totalAvailable = 0;
+
+      const usedDeck = getUsedWordsDeck();
+      const customWordsData = getCustomWords();
+
+      Object.keys(CATEGORIES).forEach(k => {
+        totalOfficial += CATEGORIES[k].palabras.length;
+        const customsForCat = (customWordsData[k] || []).length;
+        totalCustom += customsForCat;
+        const playedForCat = (usedDeck[k] || []).length;
+        totalPlayed += playedForCat;
+        const availForCat = getCategoryAvailableWords(k).length;
+        totalAvailable += availForCat;
+      });
+
+      if (statOfficial) statOfficial.textContent = totalOfficial;
+      if (statCustom) statCustom.textContent = totalCustom;
+      if (statPlayed) statPlayed.textContent = totalPlayed;
+      if (statAvailable) statAvailable.textContent = totalAvailable;
+      if (chkStrict) chkStrict.checked = isStrictInfiniteMemory();
+
+      // Render chips
+      if (chipsList) {
+        chipsList.innerHTML = '';
+        const selectedCat = filterCat ? filterCat.value : 'all';
+        const searchQuery = (searchInput ? searchInput.value : '').trim().toLowerCase();
+
+        const categoriesToDisplay = selectedCat === 'all' ? Object.keys(CATEGORIES) : [selectedCat];
+        let visibleCount = 0;
+
+        categoriesToDisplay.forEach(catKey => {
+          const official = CATEGORIES[catKey] ? CATEGORIES[catKey].palabras : [];
+          const customs = customWordsData[catKey] || [];
+          const usedInCat = usedDeck[catKey] || [];
+
+          // Oficiales
+          official.forEach(word => {
+            if (searchQuery && !word.toLowerCase().includes(searchQuery)) return;
+            visibleCount++;
+            const isPlayed = usedInCat.includes(word);
+            const chip = document.createElement('div');
+            chip.className = `word-chip px-2.5 py-1 rounded-lg border text-[11px] font-medium flex items-center gap-1.5 transition ${
+              isPlayed 
+                ? 'is-played bg-slate-900/60 border-slate-800 text-slate-500 line-through opacity-70' 
+                : 'bg-emerald-950/30 border-emerald-500/30 text-emerald-300'
+            }`;
+            chip.title = `${CATEGORIES[catKey].nombre} - ${isPlayed ? 'Ya jugada' : 'Disponible'}`;
+            chip.innerHTML = `<span>${isPlayed ? '✓' : '●'}</span><span>${word}</span>`;
+            chipsList.appendChild(chip);
+          });
+
+          // Personalizadas
+          customs.forEach(item => {
+            const word = item.word;
+            if (searchQuery && !word.toLowerCase().includes(searchQuery)) return;
+            visibleCount++;
+            const isPlayed = usedInCat.includes(word);
+            const chip = document.createElement('div');
+            chip.className = `word-chip is-custom px-2.5 py-1 rounded-lg border text-[11px] font-medium flex items-center gap-1.5 transition ${
+              isPlayed 
+                ? 'is-played bg-slate-900/60 border-slate-800 text-purple-400/50 line-through' 
+                : 'bg-purple-950/40 border-purple-500/40 text-purple-300'
+            }`;
+            chip.title = `Personalizada en ${CATEGORIES[catKey].nombre} - Pista: ${item.hint || 'Relacionado'}`;
+            chip.innerHTML = `
+              <span>★</span>
+              <span>${word}</span>
+              <button type="button" class="btn-del-custom text-slate-400 hover:text-rose-400 ml-0.5 text-xs font-black transition" data-cat="${catKey}" data-word="${word.replace(/"/g, '&quot;')}" title="Eliminar palabra personalizada">×</button>
+            `;
+            chipsList.appendChild(chip);
+          });
+        });
+
+        if (txtFilteredCount) {
+          txtFilteredCount.textContent = `Mostrando ${visibleCount} palabras`;
+        }
+
+        // Add event listeners to delete custom words
+        chipsList.querySelectorAll('.btn-del-custom').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const cKey = btn.getAttribute('data-cat');
+            const wVal = btn.getAttribute('data-word');
+            if (cKey && wVal) {
+              deleteCustomWord(cKey, wVal);
+            }
+          });
+        });
+      }
     }
 
     // Nombres sugeridos en español
@@ -2374,16 +3700,19 @@
             osc.start(t);
             osc.stop(t + 0.035);
           }
+          triggerHaptic(type === 'confirm' ? 24 : (type === 'soft' ? 12 : 18));
         } catch (e) {
           console.warn('Audio click error:', e);
         }
       }
 
       playTick() {
+        triggerHaptic(10);
         this.playTone(850, 'sine', 0.04, 0.08);
       }
 
       playBuzzer() {
+        triggerHaptic([50, 40, 70]);
         if (!this.enabled) return;
         this.ensureContext();
         if (!this.ctx) return;
@@ -2392,6 +3721,7 @@
       }
 
       playAlarm() {
+        triggerHaptic([70, 40, 70, 40, 90]);
         if (!this.enabled) return;
         this.ensureContext();
         if (!this.ctx) return;
@@ -2403,6 +3733,7 @@
       }
 
       playReveal() {
+        triggerHaptic(25);
         if (!this.enabled) return;
         this.ensureContext();
         if (!this.ctx) return;
@@ -2412,8 +3743,42 @@
         });
       }
 
+      // Sonido de éxito agradable y nítido para acciones exitosas (reiniciar baraja, agregar palabra)
+      playSuccess() {
+        triggerHaptic([20, 30, 40]);
+        if (!this.enabled) return;
+        this.ensureContext();
+        if (!this.ctx) return;
+        try {
+          const now = this.ctx.currentTime;
+          // Acorde arpegiado alegre y cristalino: Do5 (523Hz) -> Mi5 (659Hz) -> Sol5 (784Hz)
+          const notes = [
+            { f: 523.25, delay: 0.0, dur: 0.15, vol: 0.14 },
+            { f: 659.25, delay: 0.07, dur: 0.18, vol: 0.16 },
+            { f: 783.99, delay: 0.14, dur: 0.32, vol: 0.20 }
+          ];
+          notes.forEach(n => {
+            const t = now + n.delay;
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(n.f, t);
+            gain.gain.setValueAtTime(0.001, t);
+            gain.gain.linearRampToValueAtTime(n.vol, t + 0.015);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + n.dur);
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.start(t);
+            osc.stop(t + n.dur + 0.02);
+          });
+        } catch (e) {
+          console.warn('Success sound error:', e);
+        }
+      }
+
       // Fanfarria épica de victoria orquestal y triunfante
       playVictory() {
+        triggerHaptic([50, 60, 50, 60, 120]);
         if (!this.enabled) return;
         this.ensureContext();
         if (!this.ctx) return;
@@ -2492,6 +3857,7 @@
 
       // Tema épico y cinematográfico de derrota / victoria del impostor
       playDefeat() {
+        triggerHaptic([120, 50, 150]);
         if (!this.enabled) return;
         this.ensureContext();
         if (!this.ctx) return;
@@ -2669,6 +4035,9 @@
       playerInputsContainer: document.getElementById('playerInputsContainer'),
       btnRandomizeNames: document.getElementById('btnRandomizeNames'),
       selectCategory: document.getElementById('selectCategory'),
+      deckStatusCard: document.getElementById('deckStatusCard'),
+      txtDeckStats: document.getElementById('txtDeckStats'),
+      btnResetDeck: document.getElementById('btnResetDeck'),
       customWordContainer: document.getElementById('customWordContainer'),
       inputCustomWord: document.getElementById('inputCustomWord'),
       inputCustomHint: document.getElementById('inputCustomHint'),
@@ -2690,6 +4059,10 @@
       revealSecretCard: document.getElementById('revealSecretCard'),
       revealPlayerSecretAvatar: document.getElementById('revealPlayerSecretAvatar'),
       revealRoleBadge: document.getElementById('revealRoleBadge'),
+      btnTogglePeekSecret: document.getElementById('btnTogglePeekSecret'),
+      btnTogglePeekIcon: document.getElementById('btnTogglePeekIcon'),
+      btnTogglePeekText: document.getElementById('btnTogglePeekText'),
+      revealWordContainer: document.getElementById('revealWordContainer'),
       revealWordLabel: document.getElementById('revealWordLabel'),
       revealWordDisplay: document.getElementById('revealWordDisplay'),
       revealCategoryHint: document.getElementById('revealCategoryHint'),
@@ -2707,6 +4080,7 @@
       iconTimerPause: document.getElementById('iconTimerPause'),
       iconTimerPlay: document.getElementById('iconTimerPlay'),
       txtBtnPauseResume: document.getElementById('txtBtnPauseResume'),
+      btnSub30Seconds: document.getElementById('btnSub30Seconds'),
       btnAdd30Seconds: document.getElementById('btnAdd30Seconds'),
       discussionHardBadge: document.getElementById('discussionHardBadge'),
       firstSpeakerAvatar: document.getElementById('firstSpeakerAvatar'),
@@ -2729,6 +4103,8 @@
       resultOutcomeDesc: document.getElementById('resultOutcomeDesc'),
       btnReplayResultSound: document.getElementById('btnReplayResultSound'),
       btnReplayResultSoundText: document.getElementById('btnReplayResultSoundText'),
+      btnCopyResultSummary: document.getElementById('btnCopyResultSummary'),
+      btnCopyResultSummaryText: document.getElementById('btnCopyResultSummaryText'),
       expelledSummaryBlock: document.getElementById('expelledSummaryBlock'),
       expelledPlayerAvatar: document.getElementById('expelledPlayerAvatar'),
       expelledPlayerName: document.getElementById('expelledPlayerName'),
@@ -2755,7 +4131,23 @@
 
       modalRules: document.getElementById('modalRules'),
       btnCloseRules: document.getElementById('btnCloseRules'),
-      btnCloseRulesBottom: document.getElementById('btnCloseRulesBottom')
+      btnCloseRulesBottom: document.getElementById('btnCloseRulesBottom'),
+
+      // Deck Manager Modal & Infinite Memory controls
+      btnOpenDeckManager: document.getElementById('btnOpenDeckManager'),
+      modalDeckManager: document.getElementById('modalDeckManager'),
+      btnCloseDeckManager: document.getElementById('btnCloseDeckManager'),
+      btnCloseDeckManagerBottom: document.getElementById('btnCloseDeckManagerBottom'),
+      btnAddWordToPermanentDeck: document.getElementById('btnAddWordToPermanentDeck'),
+      inputManagerCatSelect: document.getElementById('inputManagerCatSelect'),
+      inputManagerNewWord: document.getElementById('inputManagerNewWord'),
+      inputManagerNewHint: document.getElementById('inputManagerNewHint'),
+      managerAddFeedback: document.getElementById('managerAddFeedback'),
+      chkStrictInfiniteMemory: document.getElementById('chkStrictInfiniteMemory'),
+      selectManagerFilterCategory: document.getElementById('selectManagerFilterCategory'),
+      inputSearchDeckWord: document.getElementById('inputSearchDeckWord'),
+      btnResetSelectedCatHistory: document.getElementById('btnResetSelectedCatHistory'),
+      btnResetAllInfiniteHistory: document.getElementById('btnResetAllInfiniteHistory')
     };
 
     // -------------------------------------------------------------
@@ -2772,18 +4164,23 @@
       if (newPhase === 'setup') {
         el.phaseSetup.classList.remove('hidden');
         el.headerSubtitle.textContent = 'Configuración de partida';
+        announceA11y('Fase de configuración de partida');
       } else if (newPhase === 'reveal') {
         el.phaseReveal.classList.remove('hidden');
         el.headerSubtitle.textContent = 'Fase Secreta de Roles';
+        announceA11y('Fase secreta de asignación de roles. Pasa el dispositivo.');
       } else if (newPhase === 'discussion') {
         el.phaseDiscussion.classList.remove('hidden');
         el.headerSubtitle.textContent = 'Fase de Debate';
+        announceA11y('Fase de debate iniciada.');
       } else if (newPhase === 'voting') {
         el.phaseVoting.classList.remove('hidden');
         el.headerSubtitle.textContent = 'Asamblea de Votación';
+        announceA11y('Asamblea de votación. Cada jugador emite su voto.');
       } else if (newPhase === 'result') {
         el.phaseResult.classList.remove('hidden');
         el.headerSubtitle.textContent = 'Resultados de la Partida';
+        announceA11y('Resultados de la partida presentados.');
       }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -2846,8 +4243,33 @@
       }
       el.txtNumPlayers.textContent = `${players} jugadores`;
       el.txtNumImposters.textContent = `${el.numImposters.value} ${el.numImposters.value === '1' ? 'impostor' : 'impostores'}`;
+      
+      // Highlight quick preset chip
+      document.querySelectorAll('.btn-quick-players').forEach(btn => {
+        if (btn.dataset.players === String(players)) {
+          btn.classList.add('is-active', 'bg-sky-600', 'text-white', 'border-sky-400');
+          btn.classList.remove('bg-slate-800', 'text-slate-300');
+        } else {
+          btn.classList.remove('is-active', 'bg-sky-600', 'text-white', 'border-sky-400');
+          btn.classList.add('bg-slate-800', 'text-slate-300');
+        }
+      });
+
       renderPlayerInputs();
     }
+
+    // Quick player buttons click handlers
+    document.querySelectorAll('.btn-quick-players').forEach(btn => {
+      btn.addEventListener('click', () => {
+        sound.playClick('soft');
+        triggerHaptic(20);
+        const p = parseInt(btn.dataset.players, 10);
+        if (!isNaN(p)) {
+          el.numPlayers.value = p;
+          updatePlayerAndImposterLimits();
+        }
+      });
+    });
 
     // Event listeners for setup inputs
     el.numPlayers.addEventListener('input', updatePlayerAndImposterLimits);
@@ -2908,7 +4330,15 @@
       } else {
         el.customWordContainer.classList.add('hidden');
       }
+      updateDeckStatsUI();
     });
+
+    if (el.btnResetDeck) {
+      el.btnResetDeck.addEventListener('click', () => {
+        sound.playClick('default');
+        resetUsedWordsDeck(el.selectCategory.value);
+      });
+    }
 
     el.selectTimerMinutes.addEventListener('change', () => {
       sound.playClick('soft');
@@ -2983,19 +4413,44 @@
         chosenCategoryName = 'Palabra Personalizada';
         chosenHintWord = getHintForWord(customWord, customHint);
       } else if (isHardMode || catVal === 'aleatorio') {
-        // En Modo Difícil, la categoría SIEMPRE se elige al azar en secreto
-        // para que ningún jugador sepa la categoría de antemano
+        // En Modo Difícil o Aleatorio, se escoge una categoría que tenga palabras disponibles en la baraja
         const catKeys = Object.keys(CATEGORIES);
-        const randomKey = catKeys[Math.floor(Math.random() * catKeys.length)];
-        const categoryObj = CATEGORIES[randomKey];
+        let candidateCats = catKeys.filter(k => getCategoryAvailableWords(k).length > 0);
+        if (candidateCats.length === 0) {
+          candidateCats = catKeys;
+        }
+        const chosenCatKey = candidateCats[Math.floor(Math.random() * candidateCats.length)];
+        const categoryObj = CATEGORIES[chosenCatKey];
         chosenCategoryName = categoryObj.nombre;
-        chosenWord = categoryObj.palabras[Math.floor(Math.random() * categoryObj.palabras.length)];
+        const pickResult = pickWordWithoutRepetition(chosenCatKey);
+
+        if (pickResult.exhausted) {
+          showSetupError(`¡Has completado todas las palabras registradas en "${pickResult.categoryName}"! Con la Memoria Ilimitada Estricta no se repetirán. Añade nuevas palabras en "Gestionar / Añadir" o reinicia la baraja de esa categoría.`);
+          return;
+        }
+
+        chosenWord = pickResult.word;
         chosenHintWord = getHintForWord(chosenWord);
+        if (pickResult.wasRecycled) {
+          showToast(`¡Se completaron las palabras de ${categoryObj.nombre}! Baraja reciclada.`);
+        }
+        updateDeckStatsUI();
       } else {
         const categoryObj = CATEGORIES[catVal];
         chosenCategoryName = categoryObj.nombre;
-        chosenWord = categoryObj.palabras[Math.floor(Math.random() * categoryObj.palabras.length)];
+        const pickResult = pickWordWithoutRepetition(catVal);
+
+        if (pickResult.exhausted) {
+          showSetupError(`¡Has jugado todas las ${pickResult.total} palabras de "${pickResult.categoryName}"! Con la Memoria Ilimitada Estricta no se repetirán. Pulsa "Gestionar / Añadir" para ingresar más palabras o "Reiniciar" para volver a usarlas.`);
+          return;
+        }
+
+        chosenWord = pickResult.word;
         chosenHintWord = getHintForWord(chosenWord);
+        if (pickResult.wasRecycled) {
+          showToast(`¡Se completaron las palabras de ${categoryObj.nombre}! Baraja reciclada.`);
+        }
+        updateDeckStatsUI();
       }
 
       // Assign roles
@@ -3078,17 +4533,30 @@
       el.revealWaitingCard.classList.add('hidden');
       el.revealSecretCard.classList.remove('hidden');
 
+      if (el.revealWordContainer) {
+        el.revealWordContainer.style.opacity = '1';
+        el.revealWordContainer.style.pointerEvents = 'auto';
+      }
+      if (el.btnTogglePeekText) el.btnTogglePeekText.textContent = 'Ocultar palabra';
+      if (el.btnTogglePeekIcon) el.btnTogglePeekIcon.textContent = '👁️';
+
       if (el.revealPlayerSecretAvatar) {
         el.revealPlayerSecretAvatar.textContent = curPlayer.avatar || '🦊';
       }
 
       const isImposter = curPlayer.role === 'impostor';
+      if (isImposter) {
+        triggerHaptic([40, 50, 40]);
+      } else {
+        triggerHaptic(25);
+      }
+      announceA11y(curPlayer.name + ', mira tu rol en secreto.');
 
       if (isImposter) {
         // Red Theme for Imposter
-        el.revealSecretCard.className = 'rounded-3xl p-7 text-center space-y-6 shadow-2xl relative overflow-hidden transition-all duration-300 bg-rose-950/90 border border-rose-700/70 glow-red';
+        el.revealSecretCard.className = 'rounded-3xl p-5 sm:p-7 text-center space-y-4 sm:space-y-5 shadow-2xl relative overflow-hidden transition-all duration-300 bg-rose-950/90 border border-rose-700/70 glow-red';
         
-        el.revealRoleBadge.className = 'inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-rose-500/20 text-rose-300 border border-rose-500/40';
+        el.revealRoleBadge.className = 'inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-rose-500/20 text-rose-300 border border-rose-500/40';
         el.revealRoleBadge.innerHTML = `
           <svg class="w-4 h-4 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -3097,26 +4565,26 @@
         `;
 
         if (state.isHardMode) {
-          el.revealWordLabel.innerHTML = '<span class="text-xs uppercase tracking-wider font-semibold text-rose-300">Misión del Impostor (Sin Pista)</span>';
-          el.revealWordDisplay.className = 'text-2xl sm:text-3xl font-black tracking-tight break-words px-3 py-4 rounded-2xl bg-black/60 border border-rose-800 text-rose-400';
+          el.revealWordLabel.innerHTML = '<span class="text-xs uppercase tracking-wider font-semibold text-rose-300">Modo Difícil (Sin Pista)</span>';
+          el.revealWordDisplay.className = 'text-2xl sm:text-3xl font-black tracking-tight break-words px-3 py-3.5 rounded-2xl bg-black/60 border border-rose-800 text-rose-400';
           el.revealWordDisplay.innerHTML = '❌ SIN PALABRA PISTA';
 
           el.revealCategoryHint.innerHTML = `
-            <div class="space-y-1">
-              <span class="inline-block px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300 text-[10px] font-black uppercase tracking-wider border border-rose-500/30">⚡ Dificultad Extrema</span>
-              <p class="text-rose-200/90 text-xs">En Modo Difícil <strong>no tienes palabra pista</strong> y la categoría es secreta. ¡Juegas totalmente a ciegas!</p>
+            <div class="space-y-0.5">
+              <span class="inline-block px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 text-[10px] font-black uppercase tracking-wider border border-rose-500/30">⚡ A ciegas</span>
+              <p class="text-rose-200/90 text-xs">Juegas sin pista ni categoría. ¡Deduce el tema escuchando al grupo!</p>
             </div>
           `;
 
-          el.revealRoleInstructions.className = 'text-xs p-4 rounded-xl text-left space-y-1.5 bg-black/40 border border-rose-900/60 text-rose-200';
+          el.revealRoleInstructions.className = 'text-xs p-3.5 sm:p-4 rounded-xl text-left space-y-1 bg-black/40 border border-rose-900/60 text-rose-200';
           el.revealRoleInstructions.innerHTML = `
-            <div class="font-bold text-rose-300 flex items-center gap-1">⚡ Presión Contrarreloj Extrema:</div>
-            <p>• <strong>Sin palabra pista:</strong> Deduce el tema escuchando con atención las pistas de los demás.</p>
-            <p>• <strong>Reloj estricto:</strong> Sin prórrogas. Si provocas dudas o un empate en la votación, ¡ganas la partida!</p>
+            <div class="font-bold text-rose-300 flex items-center gap-1">⚡ Objetivo:</div>
+            <p>• Escucha las pistas con atención para descubrir el tema.</p>
+            <p>• Si provocas dudas o un empate en la votación, ¡ganas!</p>
           `;
         } else {
-          el.revealWordLabel.innerHTML = '<span class="text-amber-400 font-bold uppercase tracking-wider text-xs">💡 Tu Palabra Pista:</span>';
-          el.revealWordDisplay.className = 'text-3xl sm:text-4xl font-black tracking-tight break-words px-3 py-4 rounded-2xl bg-amber-950/40 border-2 border-amber-500 text-amber-300 shadow-lg shadow-amber-950/50';
+          el.revealWordLabel.innerHTML = '<span class="text-amber-400 font-bold uppercase tracking-wider text-xs">💡 Palabra Pista:</span>';
+          el.revealWordDisplay.className = 'text-3xl sm:text-4xl font-black tracking-tight break-words px-3 py-3.5 rounded-2xl bg-amber-950/40 border-2 border-amber-500 text-amber-300 shadow-lg shadow-amber-950/50';
           el.revealWordDisplay.innerHTML = `
             <div class="flex items-center justify-center gap-2">
               <span>💡</span>
@@ -3125,25 +4593,24 @@
           `;
 
           el.revealCategoryHint.innerHTML = `
-            <div class="space-y-1">
+            <div class="space-y-0.5">
               <p><span class="text-slate-400 font-normal">Categoría:</span> <span class="text-white font-bold">${state.categoryName}</span></p>
-              <p class="text-[11px] text-amber-300/90 font-medium">Usa esta palabra pista para defenderte y dar pistas creíbles sin conocer la palabra exacta de los tripulantes.</p>
+              <p class="text-[11px] text-amber-300/90">Usa esta pista para camuflarte sin saber la palabra exacta.</p>
             </div>
           `;
 
-          el.revealRoleInstructions.className = 'text-xs p-4 rounded-xl text-left space-y-1.5 bg-black/40 border border-rose-900/60 text-rose-200';
+          el.revealRoleInstructions.className = 'text-xs p-3.5 sm:p-4 rounded-xl text-left space-y-1 bg-black/40 border border-rose-900/60 text-rose-200';
           el.revealRoleInstructions.innerHTML = `
-            <div class="font-bold text-amber-300 flex items-center gap-1">🤫 Consejos para ganar (Modo Normal):</div>
-            <p>• Tu palabra pista es <strong>"${state.hintWord}"</strong>: di algo relacionado sutilmente con ella para camuflarte.</p>
-            <p>• Escucha las pistas de los demás para deducir la palabra secreta real y no ser descubierto.</p>
-            <p>• ¡Engaña al grupo y desvía las sospechas hacia los tripulantes inocentes!</p>
+            <div class="font-bold text-amber-300 flex items-center gap-1">🤫 Consejos:</div>
+            <p>• Di una pista sutil usando <strong>"${state.hintWord}"</strong> para despistar.</p>
+            <p>• Escucha a los demás para adivinar la palabra real.</p>
           `;
         }
       } else {
         // Emerald Theme for Crew
-        el.revealSecretCard.className = 'rounded-3xl p-7 text-center space-y-6 shadow-2xl relative overflow-hidden transition-all duration-300 bg-emerald-950/90 border border-emerald-700/70 glow-green';
+        el.revealSecretCard.className = 'rounded-3xl p-5 sm:p-7 text-center space-y-4 sm:space-y-5 shadow-2xl relative overflow-hidden transition-all duration-300 bg-emerald-950/90 border border-emerald-700/70 glow-green';
         
-        el.revealRoleBadge.className = 'inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-emerald-500/20 text-emerald-300 border border-emerald-500/40';
+        el.revealRoleBadge.className = 'inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-emerald-500/20 text-emerald-300 border border-emerald-500/40';
         el.revealRoleBadge.innerHTML = `
           <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -3151,17 +4618,17 @@
           TRIPULANTE INOCENTE
         `;
 
-        el.revealWordLabel.innerHTML = '<span class="text-xs uppercase tracking-wider font-semibold text-slate-300">Tu Palabra Secreta es:</span>';
-        el.revealWordDisplay.className = 'text-3xl sm:text-4xl font-black tracking-tight break-words px-3 py-4 rounded-2xl bg-black/60 border border-emerald-800 text-emerald-300';
+        el.revealWordLabel.innerHTML = '<span class="text-xs uppercase tracking-wider font-semibold text-slate-300">Tu Palabra Secreta:</span>';
+        el.revealWordDisplay.className = 'text-3xl sm:text-4xl font-black tracking-tight break-words px-3 py-3.5 rounded-2xl bg-black/60 border border-emerald-800 text-emerald-300';
         el.revealWordDisplay.textContent = state.secretWord;
 
         el.revealCategoryHint.innerHTML = `<span class="text-slate-400 font-normal">Categoría:</span> <span class="text-white font-bold">${state.categoryName}</span>`;
 
-        el.revealRoleInstructions.className = 'text-xs p-4 rounded-xl text-left space-y-1.5 bg-black/40 border border-emerald-900/60 text-emerald-200';
+        el.revealRoleInstructions.className = 'text-xs p-3.5 sm:p-4 rounded-xl text-left space-y-1 bg-black/40 border border-emerald-900/60 text-emerald-200';
         el.revealRoleInstructions.innerHTML = `
           <div class="font-bold text-emerald-300 flex items-center gap-1">🛡️ Tu objetivo:</div>
-          <p>• Describe la palabra con una pista inteligente pero sutil sin decir el término exacto.</p>
-          <p>• Identifica a quien parezca desconcertado o dé pistas vagas.</p>
+          <p>• Da una pista sutil sobre tu palabra sin decir el término exacto.</p>
+          <p>• Detecta quién duda o da pistas sospechosas.</p>
         `;
       }
 
@@ -3172,6 +4639,26 @@
         const nextPlayer = state.players[state.revealIndex + 1];
         el.btnNextRevealText.textContent = `Ocultar y pasar a ${nextPlayer.name}`;
       }
+    }
+
+    if (el.btnTogglePeekSecret) {
+      el.btnTogglePeekSecret.addEventListener('click', () => {
+        sound.playClick('soft');
+        const isHidden = el.revealWordContainer.style.opacity === '0';
+        if (isHidden) {
+          el.revealWordContainer.style.opacity = '1';
+          el.revealWordContainer.style.pointerEvents = 'auto';
+          el.btnTogglePeekText.textContent = 'Ocultar palabra';
+          el.btnTogglePeekIcon.textContent = '👁️';
+          triggerHaptic(20);
+        } else {
+          el.revealWordContainer.style.opacity = '0';
+          el.revealWordContainer.style.pointerEvents = 'none';
+          el.btnTogglePeekText.textContent = 'Mostrar palabra';
+          el.btnTogglePeekIcon.textContent = '🙈';
+          triggerHaptic(30);
+        }
+      });
     }
 
     el.btnRevealSecret.addEventListener('click', () => {
@@ -3207,18 +4694,34 @@
       if (state.isHardMode) {
         if (el.discussionHardBadge) el.discussionHardBadge.classList.remove('hidden');
         el.btnAdd30Seconds.disabled = true;
-        el.btnAdd30Seconds.className = 'px-4 py-2.5 rounded-xl bg-slate-800/40 text-slate-500 text-xs sm:text-sm font-semibold border border-slate-800 cursor-not-allowed flex items-center gap-1.5 opacity-60';
+        el.btnAdd30Seconds.className = 'px-3 sm:px-4 py-2.5 rounded-xl bg-slate-800/40 text-slate-500 text-xs sm:text-sm font-semibold border border-slate-800 cursor-not-allowed flex items-center gap-1.5 opacity-60';
         el.btnAdd30Seconds.innerHTML = '<span class="text-rose-400">🚫</span> +30s Bloqueado';
+
+        if (el.btnSub30Seconds) {
+          el.btnSub30Seconds.disabled = true;
+          el.btnSub30Seconds.className = 'px-3 sm:px-3.5 py-2.5 rounded-xl bg-slate-800/40 text-slate-500 text-xs sm:text-sm font-semibold border border-slate-800 cursor-not-allowed flex items-center gap-1.5 opacity-60';
+        }
       } else {
         if (el.discussionHardBadge) el.discussionHardBadge.classList.add('hidden');
         el.btnAdd30Seconds.disabled = false;
-        el.btnAdd30Seconds.className = 'px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition flex items-center gap-1.5 active:scale-95';
+        el.btnAdd30Seconds.className = 'px-3 sm:px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition flex items-center gap-1.5 active:scale-95 shadow-sm';
         el.btnAdd30Seconds.innerHTML = `
           <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
           </svg>
-          +30 Segundos
+          <span>+30s</span>
         `;
+
+        if (el.btnSub30Seconds) {
+          el.btnSub30Seconds.disabled = false;
+          el.btnSub30Seconds.className = 'px-3 sm:px-3.5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition flex items-center gap-1.5 active:scale-95 shadow-sm';
+          el.btnSub30Seconds.innerHTML = `
+            <svg class="w-4 h-4 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+            </svg>
+            <span>-30s</span>
+          `;
+        }
       }
 
       // Timer setup
@@ -3256,21 +4759,24 @@
       const offset = circumference - (fraction * circumference);
       el.timerCircleProgress.style.strokeDashoffset = offset;
 
-      // Visual color alerts
-      if (state.timerSecondsLeft <= 10) {
+      // Visual color alerts & tension pulse
+      if (state.timerSecondsLeft <= 10 && state.timerSecondsLeft > 0) {
         el.timerCircleProgress.classList.remove('text-emerald-500', 'text-amber-500');
         el.timerCircleProgress.classList.add('text-rose-500');
         el.timerText.classList.add('text-rose-400', 'animate-pulse');
+        el.timerCardContainer.classList.add('timer-tension');
         el.timerStatusLabel.textContent = '¡TIEMPO CASI AGOTADO!';
       } else if (state.timerSecondsLeft <= 30) {
         el.timerCircleProgress.classList.remove('text-emerald-500', 'text-rose-500');
         el.timerCircleProgress.classList.add('text-amber-500');
         el.timerText.classList.remove('text-rose-400', 'animate-pulse');
+        el.timerCardContainer.classList.remove('timer-tension');
         el.timerStatusLabel.textContent = 'Últimos segundos para debatir';
       } else {
         el.timerCircleProgress.classList.remove('text-amber-500', 'text-rose-500');
         el.timerCircleProgress.classList.add('text-emerald-500');
         el.timerText.classList.remove('text-rose-400', 'animate-pulse');
+        el.timerCardContainer.classList.remove('timer-tension');
         el.timerStatusLabel.textContent = 'Tiempo Restante';
       }
     }
@@ -3284,7 +4790,7 @@
         state.timerSecondsLeft--;
         updateTimerDisplay();
 
-        // Audio ticks in final 10 seconds
+        // Audio ticks in final 5 seconds
         if (state.timerSecondsLeft > 0 && state.timerSecondsLeft <= 5) {
           sound.playTick();
         }
@@ -3303,6 +4809,7 @@
       el.timerStatusLabel.textContent = '¡TIEMPO TERMINADO!';
       
       // Flash screen border or show alert
+      el.timerCardContainer.classList.remove('timer-tension');
       el.timerCardContainer.classList.add('glow-red');
       
       if (state.isHardMode || state.isTimeAttack) {
@@ -3329,6 +4836,23 @@
         sound.playClick('confirm');
       }
     });
+
+    if (el.btnSub30Seconds) {
+      el.btnSub30Seconds.addEventListener('click', () => {
+        if (state.isHardMode) {
+          sound.playClick('cancel');
+          return;
+        }
+        if (state.timerSecondsLeft <= 30) {
+          sound.playClick('cancel');
+          showToast('Tiempo mínimo restante alcanzado.');
+          return;
+        }
+        state.timerSecondsLeft -= 30;
+        updateTimerDisplay();
+        sound.playClick('soft');
+      });
+    }
 
     el.btnAdd30Seconds.addEventListener('click', () => {
       if (state.isHardMode) {
@@ -3407,14 +4931,20 @@
         }
       }
 
+      announceA11y('Turno de voto para ' + currentVoter.name + '.');
+
       // Render candidates (all players except the current voter)
       el.votingCandidatesGrid.innerHTML = '';
+      let candidateNumber = 1;
       state.players.forEach(p => {
         if (p.id === currentVoter.id) return; // cannot vote for self
+        const num = candidateNumber++;
 
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'candidate-card p-3 rounded-2xl border border-slate-700/80 bg-slate-800/80 hover:bg-slate-700/90 text-left transition flex items-center justify-between active:scale-95 group shadow-sm';
+        btn.className = 'candidate-card p-3 rounded-2xl border border-slate-700/80 bg-slate-800/80 hover:bg-slate-700/90 text-left transition flex items-center justify-between active:scale-95 group shadow-sm focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:outline-none';
+        btn.setAttribute('data-target-id', p.id);
+        btn.setAttribute('data-target-num', String(num));
         btn.innerHTML = `
           <div class="flex items-center gap-3">
             <span class="avatar-badge w-10 h-10 bg-slate-700/70 border border-slate-600/60 text-xl group-hover:scale-110 transition-transform">
@@ -3422,7 +4952,8 @@
             </span>
             <div>
               <div class="text-sm font-bold text-white group-hover:text-rose-300 flex items-center gap-1.5">
-                ${p.name}
+                <span>${p.name}</span>
+                <span class="kbd-hint hidden sm:inline-block">${num}</span>
               </div>
               <div class="text-[10px] text-slate-400">Sospechoso de Impostor</div>
             </div>
@@ -3623,32 +5154,32 @@
 
       if (!state.impostorsWon) {
         // Crew Victory
-        el.resultBannerCard.className = 'rounded-3xl border border-emerald-600/80 bg-gradient-to-br from-emerald-950 via-slate-900 to-indigo-950 p-7 text-center space-y-4 shadow-2xl relative overflow-hidden glow-green celebrate-anim';
+        el.resultBannerCard.className = 'rounded-3xl border border-emerald-600/80 bg-gradient-to-br from-emerald-950 via-slate-900 to-indigo-950 p-5 sm:p-6 text-center space-y-3 shadow-2xl relative overflow-hidden glow-green celebrate-anim';
         el.resultOutcomeIcon.textContent = '🎉';
-        el.resultOutcomeIcon.className = 'w-20 h-20 mx-auto rounded-3xl flex items-center justify-center text-4xl shadow-xl bg-emerald-900/60 border border-emerald-600 text-emerald-300';
-        el.resultOutcomeTitle.textContent = state.isHardMode ? '¡Victoria Épica bajo Contrarreloj!' : '¡Tripulantes Victoriosos!';
+        el.resultOutcomeIcon.className = 'w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-3xl flex items-center justify-center text-3xl sm:text-4xl shadow-xl bg-emerald-900/60 border border-emerald-600 text-emerald-300';
+        el.resultOutcomeTitle.textContent = state.isHardMode ? '¡Victoria Épica!' : '¡Victoria de los Tripulantes!';
         el.resultOutcomeTitle.className = 'text-2xl sm:text-3xl font-black tracking-tight text-emerald-400';
         el.resultOutcomeDesc.textContent = state.isHardMode
-          ? `Superaron la presión extrema del tiempo y categoría secreta descubriendo a ${state.expelledPlayer?.name || 'el impostor'}. (+3 pts por tripulante)`
-          : `Descubrieron con éxito a ${state.expelledPlayer?.name || 'el impostor'}. La palabra secreta quedó a salvo.`;
+          ? `Superaron la presión del reloj y descubrieron a ${state.expelledPlayer?.name || 'el impostor'}. (+3 pts)`
+          : `Descubrieron a ${state.expelledPlayer?.name || 'el impostor'}. ¡Palabra protegida!`;
         if (el.btnReplayResultSoundText) {
-          el.btnReplayResultSoundText.textContent = 'Repetir Fanfarria de Victoria';
+          el.btnReplayResultSoundText.textContent = 'Repetir Fanfarria';
         }
       } else {
         // Imposter Victory
-        el.resultBannerCard.className = 'rounded-3xl border border-rose-600/80 bg-gradient-to-br from-rose-950 via-slate-900 to-slate-950 p-7 text-center space-y-4 shadow-2xl relative overflow-hidden glow-red animate-pop';
+        el.resultBannerCard.className = 'rounded-3xl border border-rose-600/80 bg-gradient-to-br from-rose-950 via-slate-900 to-slate-950 p-5 sm:p-6 text-center space-y-3 shadow-2xl relative overflow-hidden glow-red animate-pop';
         el.resultOutcomeIcon.textContent = '😈';
-        el.resultOutcomeIcon.className = 'w-20 h-20 mx-auto rounded-3xl flex items-center justify-center text-4xl shadow-xl bg-rose-900/60 border border-rose-600 text-rose-300';
-        el.resultOutcomeTitle.textContent = state.isHardMode ? '¡Ganan los Impostores bajo Presión!' : '¡Ganan los Impostores!';
+        el.resultOutcomeIcon.className = 'w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-3xl flex items-center justify-center text-3xl sm:text-4xl shadow-xl bg-rose-900/60 border border-rose-600 text-rose-300';
+        el.resultOutcomeTitle.textContent = '¡Ganan los Impostores!';
         el.resultOutcomeTitle.className = 'text-2xl sm:text-3xl font-black tracking-tight text-rose-400';
         if (outcome === 'empate_dificil') {
-          el.resultOutcomeDesc.textContent = `¡Falta de consenso contra el reloj! En Modo Difícil, el empate otorga la victoria automática a los impostores (${realImpostersNames}) con bonificación (+4 pts).`;
+          el.resultOutcomeDesc.textContent = `Empate contrarreloj: ¡triunfo para los impostores (${realImpostersNames}) con +4 pts!`;
         } else if (outcome === 'skip_dificil') {
-          el.resultOutcomeDesc.textContent = `¡Indecisión fatal! El tiempo agotado o abstenerse en Modo Difícil le entrega el triunfo a los impostores (${realImpostersNames}) (+4 pts).`;
+          el.resultOutcomeDesc.textContent = `Tiempo agotado: ¡victoria de los impostores (${realImpostersNames})!`;
         } else if (outcome === 'inocente_expulsado') {
-          el.resultOutcomeDesc.textContent = `Expulsaron a un inocente (${state.expelledPlayer?.name}). Los impostores (${realImpostersNames}) lograron engañar al grupo completo.`;
+          el.resultOutcomeDesc.textContent = `Expulsaron a un inocente (${state.expelledPlayer?.name}). ¡Los impostores (${realImpostersNames}) engañaron al grupo!`;
         } else {
-          el.resultOutcomeDesc.textContent = `Nadie fue expulsado y los impostores (${realImpostersNames}) sobrevivieron al debate sin ser descubiertos.`;
+          el.resultOutcomeDesc.textContent = `Nadie fue expulsado. ¡Los impostores (${realImpostersNames}) sobrevivieron al debate!`;
         }
         if (el.btnReplayResultSoundText) {
           el.btnReplayResultSoundText.textContent = 'Repetir Tema del Impostor';
@@ -3707,6 +5238,68 @@
       sound.playClick('default');
       switchPhase('setup');
     });
+
+    // Copiar y compartir resumen de la partida para grupos
+    function copyResultSummaryToClipboard() {
+      const realImposters = state.players.filter(p => p.role === 'impostor').map(p => p.name).join(', ');
+      const winner = !state.impostorsWon ? 'Tripulantes Inocentes 🛡️' : 'Impostores 😈';
+      const expelledName = state.expelledPlayer ? state.expelledPlayer.name : 'Nadie expulsado';
+      const mode = state.isHardMode ? 'Modo Difícil (Contrarreloj)' : 'Modo Normal';
+      const hintLine = (!state.isHardMode && state.hintWord) ? `💡 Pista del impostor: ${state.hintWord}\n` : '';
+
+      const summaryText = `🎭 EL IMPOSTOR - RESULTADO DE LA RONDA 🎭\n` +
+        `🏆 Victoria: ${winner}\n` +
+        `⚙️ Modo: ${mode}\n` +
+        `🔍 Palabra Secreta: ${state.secretWord} (${state.categoryName})\n` +
+        hintLine +
+        `😈 Impostor(es): ${realImposters}\n` +
+        `🗳️ Expulsado por votos: ${expelledName}\n` +
+        `👥 Jugadores: ${state.players.map(p => p.name).join(', ')}`;
+
+      sound.playClick('confirm');
+      triggerHaptic([30, 40]);
+
+      function onCopySuccess() {
+        showToast('¡Resumen de partida copiado al portapapeles!');
+        if (el.btnCopyResultSummaryText) {
+          const original = el.btnCopyResultSummaryText.textContent;
+          el.btnCopyResultSummaryText.textContent = '✓ ¡Copiado al portapapeles!';
+          setTimeout(() => {
+            if (el.btnCopyResultSummaryText) el.btnCopyResultSummaryText.textContent = original;
+          }, 2500);
+        }
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(summaryText)
+          .then(onCopySuccess)
+          .catch(() => fallbackCopyText(summaryText, onCopySuccess));
+      } else {
+        fallbackCopyText(summaryText, onCopySuccess);
+      }
+    }
+
+    function fallbackCopyText(text, cb) {
+      try {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        if (cb) cb();
+        else showToast('¡Resumen copiado!');
+      } catch (e) {
+        showToast('No se pudo copiar automáticamente.');
+      }
+    }
+
+    if (el.btnCopyResultSummary) {
+      el.btnCopyResultSummary.addEventListener('click', copyResultSummaryToClipboard);
+    }
 
     // -------------------------------------------------------------
     // Sound, Music & Modal Handlers
@@ -3870,8 +5463,106 @@
     el.btnCloseRules.addEventListener('click', closeRulesModal);
     el.btnCloseRulesBottom.addEventListener('click', closeRulesModal);
 
+    // Modal: Banco de Memoria Ilimitada & Baraja
+    function openDeckManagerModal() {
+      sound.playClick('default');
+      renderDeckManagerUI();
+      el.modalDeckManager.classList.remove('hidden');
+      el.modalDeckManager.classList.add('flex');
+    }
+
+    function closeDeckManagerModal() {
+      sound.playClick('cancel');
+      el.modalDeckManager.classList.add('hidden');
+      el.modalDeckManager.classList.remove('flex');
+    }
+
+    if (el.btnOpenDeckManager) el.btnOpenDeckManager.addEventListener('click', openDeckManagerModal);
+    if (el.btnCloseDeckManager) el.btnCloseDeckManager.addEventListener('click', closeDeckManagerModal);
+    if (el.btnCloseDeckManagerBottom) el.btnCloseDeckManagerBottom.addEventListener('click', closeDeckManagerModal);
+
+    // Switch de Memoria Ilimitada Estricta
+    if (el.chkStrictInfiniteMemory) {
+      el.chkStrictInfiniteMemory.addEventListener('change', () => {
+        sound.playClick('soft');
+        setStrictInfiniteMemory(el.chkStrictInfiniteMemory.checked);
+        showToast(el.chkStrictInfiniteMemory.checked 
+          ? 'Memoria Estricta Activada: Las palabras nunca se repetirán.' 
+          : 'Memoria Cíclica: Se reciclarán palabras cuando termine el mazo.');
+      });
+    }
+
+    // Añadir palabra personalizada a la baraja permanente
+    if (el.btnAddWordToPermanentDeck) {
+      el.btnAddWordToPermanentDeck.addEventListener('click', () => {
+        const catKey = el.inputManagerCatSelect ? el.inputManagerCatSelect.value : 'comida';
+        const wordVal = el.inputManagerNewWord ? el.inputManagerNewWord.value.trim() : '';
+        const hintVal = el.inputManagerNewHint ? el.inputManagerNewHint.value.trim() : '';
+
+        if (!wordVal) {
+          if (el.managerAddFeedback) {
+            el.managerAddFeedback.textContent = 'Escribe la palabra secreta.';
+            el.managerAddFeedback.className = 'text-[11px] text-rose-400 font-semibold block';
+          }
+          return;
+        }
+
+        const res = addCustomWordToDeck(catKey, wordVal, hintVal);
+        if (res.success) {
+          sound.playSuccess();
+          if (el.inputManagerNewWord) el.inputManagerNewWord.value = '';
+          if (el.inputManagerNewHint) el.inputManagerNewHint.value = '';
+          if (el.managerAddFeedback) {
+            el.managerAddFeedback.textContent = `¡"${wordVal}" añadida a la baraja permanente!`;
+            el.managerAddFeedback.className = 'text-[11px] text-emerald-400 font-semibold block animate-pop';
+            setTimeout(() => {
+              if (el.managerAddFeedback) el.managerAddFeedback.className = 'hidden';
+            }, 3000);
+          }
+          showToast(`"${wordVal}" añadida al banco ilimitado.`);
+        } else {
+          sound.playClick('cancel');
+          if (el.managerAddFeedback) {
+            el.managerAddFeedback.textContent = res.msg;
+            el.managerAddFeedback.className = 'text-[11px] text-rose-400 font-semibold block';
+          }
+        }
+      });
+    }
+
+    // Filtros de categoría y buscador de palabras en baraja
+    if (el.selectManagerFilterCategory) {
+      el.selectManagerFilterCategory.addEventListener('change', () => {
+        sound.playClick('soft');
+        renderDeckManagerUI();
+      });
+    }
+
+    if (el.inputSearchDeckWord) {
+      el.inputSearchDeckWord.addEventListener('input', () => {
+        renderDeckManagerUI();
+      });
+    }
+
+    // Botones de reinicio de memoria
+    if (el.btnResetSelectedCatHistory) {
+      el.btnResetSelectedCatHistory.addEventListener('click', () => {
+        const currentCat = el.selectManagerFilterCategory && el.selectManagerFilterCategory.value !== 'all' 
+          ? el.selectManagerFilterCategory.value 
+          : (el.selectCategory ? el.selectCategory.value : 'comida');
+        resetUsedWordsDeck(currentCat);
+      });
+    }
+
+    if (el.btnResetAllInfiniteHistory) {
+      el.btnResetAllInfiniteHistory.addEventListener('click', () => {
+        resetUsedWordsDeck('all');
+      });
+    }
+
     // Close modals on clicking backdrop
-    [el.modalScoreboard, el.modalRules].forEach(m => {
+    [el.modalScoreboard, el.modalRules, el.modalDeckManager].forEach(m => {
+      if (!m) return;
       m.addEventListener('click', (e) => {
         if (e.target === m) {
           sound.playClick('cancel');
@@ -3887,8 +5578,128 @@
     }, { once: false });
 
     // -------------------------------------------------------------
-    // Initial App Boot
+    // Keyboard Shortcuts & Power Navigation (Party & Big Screen Mode)
     // -------------------------------------------------------------
+    window.addEventListener('keydown', (e) => {
+      // Ignore if user is currently typing in an input, textarea or select
+      const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+      if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') {
+        return;
+      }
+
+      const key = e.key;
+
+      // 1. Escape: Close any open modal
+      if (key === 'Escape') {
+        if (!el.modalScoreboard.classList.contains('hidden')) {
+          closeScoreboardModal();
+          return;
+        }
+        if (!el.modalRules.classList.contains('hidden')) {
+          closeRulesModal();
+          return;
+        }
+        if (!el.modalDeckManager.classList.contains('hidden')) {
+          closeDeckManagerModal();
+          return;
+        }
+      }
+
+      // If a modal is open, avoid triggering game phase actions
+      const isAnyModalOpen = !el.modalScoreboard.classList.contains('hidden') ||
+                             !el.modalRules.classList.contains('hidden') ||
+                             !el.modalDeckManager.classList.contains('hidden');
+      if (isAnyModalOpen) return;
+
+      // 2. Global audio/theme shortcuts
+      if (key === 'm' || key === 'M') {
+        sound.init();
+        const newState = !sound.musicEnabled;
+        sound.setMusicEnabled(newState);
+        updateMusicButtonUI(newState);
+        sound.playClick(newState ? 'confirm' : 'cancel');
+        showToast(newState ? 'Música activada' : 'Música pausada');
+        return;
+      }
+
+      if (key === 't' || key === 'T') {
+        sound.playClick('soft');
+        const currentlyDark = document.documentElement.classList.contains('dark');
+        applyTheme(!currentlyDark);
+        return;
+      }
+
+      // 3. Phase-specific controls
+      if (state.phase === 'setup') {
+        if (key === ' ' || key === 'Enter') {
+          e.preventDefault();
+          sound.playClick('confirm');
+          validateAndStartGame();
+        }
+      } else if (state.phase === 'reveal') {
+        if (key === ' ' || key === 'Enter') {
+          e.preventDefault();
+          if (!el.revealWaitingCard.classList.contains('hidden')) {
+            sound.playClick('default');
+            revealCurrentPlayerSecret();
+          } else if (!el.revealSecretCard.classList.contains('hidden')) {
+            sound.playClick('confirm');
+            state.revealIndex++;
+            if (state.revealIndex < state.players.length) {
+              showPassWaitingCard();
+            } else {
+              startDiscussionPhase();
+            }
+          }
+        }
+      } else if (state.phase === 'discussion') {
+        if (key === ' ' || key === 'p' || key === 'P') {
+          e.preventDefault();
+          el.btnPauseResumeTimer.click();
+        } else if (key === '+' || key === '=') {
+          e.preventDefault();
+          if (el.btnAdd30Seconds && !el.btnAdd30Seconds.disabled) {
+            el.btnAdd30Seconds.click();
+          }
+        } else if (key === '-' || key === '_') {
+          e.preventDefault();
+          if (el.btnSub30Seconds && !el.btnSub30Seconds.disabled) {
+            el.btnSub30Seconds.click();
+          }
+        } else if (key === 'v' || key === 'V') {
+          e.preventDefault();
+          el.btnGoToVoting.click();
+        }
+      } else if (state.phase === 'voting') {
+        const currentVoter = state.players[state.currentVoterIndex];
+        if (key >= '1' && key <= '9') {
+          const targetBtn = el.votingCandidatesGrid.querySelector(`[data-target-num="${key}"]`);
+          if (targetBtn) {
+            const targetId = targetBtn.getAttribute('data-target-id');
+            if (targetId && currentVoter) {
+              registerVote(currentVoter.id, targetId);
+            }
+          }
+        } else if (key === '0' || key === 's' || key === 'S') {
+          if (currentVoter) {
+            registerVote(currentVoter.id, 'skip');
+          }
+        }
+      } else if (state.phase === 'result') {
+        if (key === ' ' || key === 'r' || key === 'R') {
+          e.preventDefault();
+          sound.playClick('confirm');
+          validateAndStartGame();
+        } else if (key === 'n' || key === 'N') {
+          e.preventDefault();
+          sound.playClick('default');
+          switchPhase('setup');
+        } else if (key === 'c' || key === 'C') {
+          e.preventDefault();
+          copyResultSummaryToClipboard();
+        }
+      }
+    });
     // Theme toggle handling (Light / Dark Mode)
     function initTheme() {
       const savedTheme = localStorage.getItem('impostor_theme');
@@ -3921,6 +5732,7 @@
     initTheme();
     updateMusicButtonUI(sound.musicEnabled);
     updatePlayerAndImposterLimits();
+    updateDeckStatsUI();
   </script>
 </body>
 </html>
